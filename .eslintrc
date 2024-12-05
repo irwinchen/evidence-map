@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "prettier"
-  ],
+  "extends": ["react-app"],
   "rules": {
-    "no-console": "warn",
-    "prefer-const": "error"
-  }
+    "react/react-in-jsx-scope": "off",
+  },
 }
