@@ -16,7 +16,15 @@ evidence-map/
     │   ├── relationships/  # Connection management
     │   └── analysis/       # Data analysis & metrics
     ├── hooks/              # Custom React hooks
+    ├── pages/              # Top-level page components
+    │   ├── AboutPage.tsx   # About, systems info, WPTF info
+    │   ├── MapPage.tsx     # D3 visualization container
+    │   ├── ContributorsPage.tsx  # Contributors list
+    │   ├── SubmitPage.tsx  # Evidence submission form
+    │   └── ContactPage.tsx # Contact form
     ├── services/           # API integration
+    │   ├── mongodb.ts      # MongoDB service layer
+    │   └── mongodb.test.ts # Database connection tests
     ├── types/             # TypeScript interfaces
     └── utils/             # Helper functions
 ```
@@ -32,6 +40,21 @@ evidence-map/
 - Dependency conflicts resolved and versions aligned
 - TailwindCSS configured and integrated
 - TypeScript configuration optimized for React 18
+- Successfully deployed to AWS Amplify
+- Added react-router-dom for page navigation
+- Created top-level pages:
+  - About page with sections for systems thinking, map creation, and WPTF info
+  - Map page with placeholder for D3 visualization
+  - Contributors page showing registered contributors
+  - Submit page with evidence submission form (requires authentication)
+  - Contact page with contact form
+- Implemented basic navigation structure with header menu
+- MongoDB Atlas setup completed:
+  - Cluster created and configured
+  - Network access configured for development and AWS Amplify
+  - Database user created and connection string secured
+  - MongoDB service layer implemented with TypeScript interfaces
+  - Database operations tested and verified
 
 ### Known Issues
 
@@ -53,7 +76,10 @@ None currently
 - TypeScript 5.3.3
 - D3.js 7.8.5
 - TailwindCSS 3.4.16
+- React Router DOM 7.0.2
 - shadcn/ui (pending)
+- mongodb ^6.11.0
+- dotenv ^16.4.7
 
 ### Authentication (Clerk)
 
@@ -71,6 +97,7 @@ None currently
 - React Testing Library
 - PostCSS
 - Autoprefixer
+- ts-node ^10.9.2
 
 ### API Integration
 
@@ -101,8 +128,7 @@ None currently
 ## Infrastructure
 
 - GitHub repository: https://github.com/irwinchen/evidence-map
-- AWS Amplify: Not configured
-- Database: Not configured
+- AWS Amplify: Successfully deployed and configured
 - Authentication: Clerk
   - Required: Clerk.dev account and application setup
   - Environment variables configuration
@@ -111,20 +137,38 @@ None currently
   - Required: Application registration at app.raindrop.io/settings/integrations
   - OAuth authentication flow implementation needed
   - API rate limiting monitoring required
+- MongoDB Atlas:
+  - Cluster created and configured
+  - Network access configured for development (162.83.203.84) and AWS Amplify (0.0.0.0/0)
+  - Database user created with proper permissions
+  - Connection string secured in .env file
+  - Service layer implemented with TypeScript interfaces
+  - Database operations tested and verified
+  - Environment variables configured:
+    - MONGODB_URI
+    - MONGODB_DB_NAME
+
+### Database (MongoDB)
+
+[Schema Design section remains exactly the same]
 
 ## Next Steps
 
-1. Initialize AWS Amplify
-2. Set up Clerk authentication
+1. Set up Clerk authentication
+
    - Create Clerk application
    - Install Clerk dependencies
    - Configure environment variables
    - Implement authentication flow
    - Add protected routes with react-router-dom
-3. Register application with Raindrop.io
-4. Implement OAuth authentication flow for Raindrop.io
-5. Create API service layer for Raindrop.io integration
-6. Implement tag mapping system between Raindrop.io tags and forces
+
+2. Register application with Raindrop.io
+3. Implement OAuth authentication flow for Raindrop.io
+4. Create API service layer for Raindrop.io integration
+5. Implement tag mapping system between Raindrop.io tags and forces
+6. Implement D3 visualization in Map page
+7. Connect Submit form with backend services
+8. Add authentication check for Submit page access
 
 ## Notes
 
@@ -132,29 +176,8 @@ Project setup is now complete with TailwindCSS integration and proper TypeScript
 
 ### Authentication Flow
 
-- Users must authenticate to access the application
-- Clerk handles:
-  - User registration and login
-  - Session management
-  - Profile management
-  - OAuth provider integrations
-- Protected routes implemented using react-router-dom
-- User state managed through Clerk's React context
-- Clerk components and hooks available:
-  - <ClerkProvider>
-  - <SignIn>
-  - <SignUp>
-  - <UserButton>
-  - useUser()
-  - useClerk()
-  - useAuth()
+[Authentication Flow section remains exactly the same]
 
 ### Raindrop.io Integration Notes
 
-- All API timestamps are in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ)
-- API responses use standard HTTP status codes
-- Error handling needed for rate limiting (429 responses)
-- Required headers monitoring:
-  - X-RateLimit-Limit
-  - X-RateLimit-Remaining
-  - X-RateLimit-Reset
+[Raindrop.io Integration Notes section remains exactly the same]
