@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import AboutPage from './pages/AboutPage';
 import MapPage from './pages/MapPage';
 import ContributorsPage from './pages/ContributorsPage';
@@ -17,7 +18,7 @@ function App() {
               <div className="flex items-center">
                 <h1 className="text-xl font-bold text-gray-900">WPTF System Mapper</h1>
               </div>
-              <div className="flex space-x-8">
+              <div className="flex items-center space-x-8">
                 <Link
                   to="/"
                   className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-gray-900"
@@ -48,6 +49,14 @@ function App() {
                 >
                   Contact
                 </Link>
+                <div className="flex items-center">
+                  <SignedOut>
+                    <SignInButton />
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                </div>
               </div>
             </div>
           </div>

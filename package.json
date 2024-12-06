@@ -9,6 +9,9 @@
   "dependencies": {
     "@babel/plugin-syntax-flow": "^7.14.5",
     "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@clerk/clerk-react": "^4.30.3",
+    "@clerk/themes": "^2.1.52",
+    "@clerk/types": "^4.38.0",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
