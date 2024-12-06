@@ -1,0 +1,4075 @@
+{
+  "version": 1,
+  "name": "Public Map: Wicked Problem Task Force",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-0XivMycj",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-OI7EWvzZ",
+      "name": "Connection",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-wnzNDYW2",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "-+",
+        "++",
+        "+-",
+        "--",
+        "Same",
+        "Opposite",
+        "+",
+        "-"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-mKnwjpFd",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-O9KZtiJq",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Core Story",
+        "Power Players",
+        "Potential Bright Spots",
+        "Economical",
+        "Journalism",
+        "The Public",
+        "Media Growth",
+        "Authoritarianism/Populism",
+        "Democracy",
+        "Information Confusion"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-80COoKdc",
+      "name": "Intervention Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-kOBRpS7J",
+      "name": "Intervention Type #2",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-UeBd6Rdt",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-9S5eoFgK",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Deregulation * Explosive Growth",
+        "Reinforcing",
+        "Balancing",
+        "Vicious",
+        "Virtuous",
+        "Stabilizing",
+        "Stagnating"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-kEbb0sHU",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-07Z8NB0M",
+      "attributes": {
+        "label": "Informed Public"
+      }
+    },
+    {
+      "_id": "elem-0cGpFnVT",
+      "attributes": {
+        "label": "Informed  Public",
+        "element type": "Core Story",
+        "description": "Condensed from:\n- Critical Thinking",
+        "tags": [
+          "Democracy",
+          "Core Story",
+          "Attention Economy",
+          "Hypothesis #1",
+          "Hypothesis #2"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-1JyzUpNU",
+      "attributes": {
+        "label": "Vulnerability  to Exploitation"
+      }
+    },
+    {
+      "_id": "elem-2alzgvGK",
+      "attributes": {
+        "label": "Social Media  Platforms",
+        "element type": "Information Confusion",
+        "description": "Condensed from:\n- Time Spent Online\n- Facebook/ Google Monopoly\n- Compelling Online Experiences\n- Craving Distraction",
+        "tags": [
+          "Attention Economy",
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-2qm6anBt",
+      "attributes": {
+        "label": "Philanthropy",
+        "element type": "Media Growth",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-3ZqKsXmV",
+      "attributes": {
+        "label": "# of Readers",
+        "element type": "Journalism",
+        "tags": [
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-3f6T5DPT",
+      "attributes": {
+        "label": "Explosive  Growth  of Media"
+      }
+    },
+    {
+      "_id": "elem-4RlywK06",
+      "attributes": {
+        "label": "Attention  Economy",
+        "element type": "Core Story",
+        "description": "Condensed from:\n- Data Mining\n- Time Spent Online\n- Addiction by Design\n- Incentive to Create Efficient Ad Methods\n- Incentive for Advertisers to Go Online\n- 24-hour media cycle\n- Craving Distraction\n- Incentive to Monetize",
+        "tags": [
+          "Attention Economy",
+          "Core Story",
+          "Authoritarianism/Populism",
+          "Hypothesis #4"
+        ],
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-4rTrcxOl",
+      "attributes": {
+        "label": "Vulture Cycle"
+      }
+    },
+    {
+      "_id": "elem-57WZQTo3",
+      "attributes": {
+        "label": "Sensory  Overload",
+        "element type": "Information Confusion",
+        "description": "Condensed from: \n- Desire for Simplicity\n- Complacency\n- Confusion\n- Volume of Information\n- Craving Distraction",
+        "tags": [
+          "Attention Economy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-6i2GJzlD",
+      "attributes": {
+        "label": "Democratic  Institutions *"
+      }
+    },
+    {
+      "_id": "elem-7xFeVnpv",
+      "attributes": {
+        "label": "Buying for  Parts",
+        "element type": "Journalism",
+        "description": "Condensed from:\n- Vulture\n- Private Equity Ownership",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-8KiNUxuV",
+      "attributes": {
+        "label": "Appropriate  media policy",
+        "element type": "Democracy",
+        "description": "Condensed from: \n- Auctioning of Spectrum\n- Overturning of Fairness Doctrine\n- Talk Radio",
+        "tags": [
+          "Democracy",
+          "Media Growth",
+          "Hypothesis #2",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Direct"
+      }
+    },
+    {
+      "_id": "elem-8MJrwoLi",
+      "attributes": {
+        "label": "Diversity of  Participants",
+        "element type": "Media Growth",
+        "tags": [
+          "Media Growth",
+          "Bright Spot",
+          "Mixed Bag",
+          "Hypothesis #1"
+        ],
+        "intervention type": "Direct"
+      }
+    },
+    {
+      "_id": "elem-9htgPjrK",
+      "attributes": {
+        "label": "Destruction  of the  Business  Model",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-A9bymR9F",
+      "attributes": {
+        "label": "Corruption",
+        "element type": "Democracy"
+      }
+    },
+    {
+      "_id": "elem-Dhas7WTa",
+      "attributes": {
+        "label": "Strength of  Democracy",
+        "element type": "Core Story",
+        "tags": [
+          "Democracy",
+          "Core Story"
+        ]
+      }
+    },
+    {
+      "_id": "elem-E9SYtDoz",
+      "attributes": {
+        "label": "Diversity  of Voices +  Experiences",
+        "element type": "Media Growth"
+      }
+    },
+    {
+      "_id": "elem-EVARgAm1",
+      "attributes": {
+        "label": "Rise of the  Demogogues",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-EY57bIWJ",
+      "attributes": {
+        "label": "Vulnerability to  Exploitation  *"
+      }
+    },
+    {
+      "_id": "elem-FYzObEaB",
+      "attributes": {
+        "label": "Informed  Public  *"
+      }
+    },
+    {
+      "_id": "elem-GRWNAfeq",
+      "attributes": {
+        "label": "Without a  Free Press,  There is No  Freedom",
+        "tags": [
+          "Democracy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-Iq50cxyf",
+      "attributes": {
+        "label": "Extreme  Right-Wing  Media",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from:\n- Extremification\n- Talk Radio",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-ItS6ZukR",
+      "attributes": {
+        "label": "Polarization",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from:\n- Sense of Community",
+        "tags": [
+          "Authoritarianism/Populism",
+          "Hypothesis #3"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-JEAd29qI",
+      "attributes": {
+        "label": "Consolidation  + Closures",
+        "element type": "Journalism",
+        "description": "Condensed from:\n- News Deserts\n- Collapse of Business Model\n\nBut there's also private equity, vulture companies that looks to tear it apart",
+        "tags": [
+          "Journalism",
+          "Media Growth",
+          "Ripple Effects",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-KmPHeYXE",
+      "attributes": {
+        "label": "North Star:  A resilient free press  that serves its function"
+      }
+    },
+    {
+      "_id": "elem-MTmsqB57",
+      "attributes": {
+        "label": "For Profit or  Public Good?"
+      }
+    },
+    {
+      "_id": "elem-NEnGcuIw",
+      "attributes": {
+        "label": "Spread of  Misinformation",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from: \n- Volume of Information\n- Mis- / Dis-information\n- \"Fake News\" rhetoric",
+        "tags": [
+          "Media Growth",
+          "Authoritarianism/Populism",
+          "Hypothesis #1"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-OBFvzlTM",
+      "attributes": {
+        "label": "Democratic  Institutions",
+        "element type": "Democracy",
+        "description": "Condensed from: \n- Corruption\n- Doubt + Distrust of Federal Government",
+        "tags": [
+          "Democracy",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-Q8cLnC4f",
+      "attributes": {
+        "label": "Vulnerability to  Exploitation *"
+      }
+    },
+    {
+      "_id": "elem-QBCVWVMa",
+      "attributes": {
+        "label": "Filter  Bubble",
+        "element type": "Information Confusion",
+        "description": "Condensed from: \n- Customized Algorithms\n- Factionalization over Facts\n- Confirmation bias\n- Sense of Community",
+        "tags": [
+          "Attention Economy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-QV7AS5xp",
+      "attributes": {
+        "label": "?",
+        "element type": "Media Growth",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-R9nkGROf",
+      "attributes": {
+        "label": "Regulation of  the Media  Market *"
+      }
+    },
+    {
+      "_id": "elem-RJVPdOYY",
+      "attributes": {
+        "label": "Attack on  News Media",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from: \n- Enemy of the People Rhetoric\n- Hostility toward journalists",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-Upz0j3Hj",
+      "attributes": {
+        "label": "What Happens  to Us in the  Attention Economy"
+      }
+    },
+    {
+      "_id": "elem-VP8E6rZk",
+      "attributes": {
+        "label": "THEMES"
+      }
+    },
+    {
+      "_id": "elem-VnUgSZqs",
+      "attributes": {
+        "label": "Mingling of  Important +  Trivial",
+        "element type": "Information Confusion",
+        "description": "Condensed from: \n- Co-Mingling of Social + News\n- Commentator Culture/ Low- Quality Discourse\n- 24-hour media cycle\n- Volume of Information",
+        "tags": [
+          "Attention Economy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-X0oGQ4qf",
+      "attributes": {
+        "label": "Digital  Ad Tech  System",
+        "element type": "Journalism",
+        "description": "Condensed from:\n- Data Mining\n- Customized Algorithms \n- Clickbait",
+        "tags": [
+          "Attention Economy",
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-YQBKEkOk",
+      "attributes": {
+        "label": "Policy",
+        "tags": [
+          "Media Growth"
+        ]
+      }
+    },
+    {
+      "_id": "elem-YdgOnTG8",
+      "attributes": {
+        "label": "Quality of  Local News",
+        "element type": "Core Story",
+        "description": "Condensed from:\n- News Deserts\n- Clickbait\n- 24-hour media cycle",
+        "tags": [
+          "Journalism",
+          "Core Story",
+          "Democracy",
+          "Hypothesis #1",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-YqDe5B9M",
+      "attributes": {
+        "label": "Culture of Exploitation"
+      }
+    },
+    {
+      "_id": "elem-anf1QCJN",
+      "attributes": {
+        "label": "LOOPS"
+      }
+    },
+    {
+      "_id": "elem-bWIuhKeW",
+      "attributes": {
+        "label": "Regulation  of the Media  Market"
+      }
+    },
+    {
+      "_id": "elem-bbevspRj",
+      "attributes": {
+        "label": "Digital Ad  Revenue for  Newspapers",
+        "element type": "Journalism",
+        "description": "Condensed from:\n- Collapse of Business Model\n- Ad Clicks\n- Clickbait",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-buh1glc5",
+      "attributes": {
+        "label": "Vulnerability to  Exploitation",
+        "element type": "Core Story",
+        "description": "Condensed from:\n- Rise of Corruption\n- Primacy of Profit",
+        "tags": [
+          "Authoritarianism/Populism",
+          "Core Story",
+          "Democracy",
+          "Media Growth",
+          "Hypothesis #1",
+          "Hypothesis #2",
+          "Hypothesis #3",
+          "Hypothesis #5"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-cNa0Hk19",
+      "attributes": {
+        "label": "Civic  Engagement",
+        "element type": "Democracy",
+        "tags": [
+          "Democracy",
+          "Hypothesis #2"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-cXAETE3X",
+      "attributes": {
+        "label": "Quality  of Local  News"
+      }
+    },
+    {
+      "_id": "elem-hbQ30b0i",
+      "attributes": {
+        "label": "Ability to  Process  Complexity",
+        "element type": "Information Confusion",
+        "description": "Condensed from:\n- Co-Mingling of Social + News\n- Complacency\n- Confusion\n- \"Ability to Distinguish Important vs. Trivial\n- Critical Thinking",
+        "tags": [
+          "Attention Economy",
+          "Hypothesis #3"
+        ],
+        "intervention type": "Direct"
+      }
+    },
+    {
+      "_id": "elem-hrkY0e91",
+      "attributes": {
+        "label": "Print Profits  + Revenue for  Newspapers",
+        "element type": "Journalism",
+        "description": "Condensed from:\n- Print Ad Revenue\n- Collapse of Business Model",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-j7GdOicB",
+      "attributes": {
+        "label": "Feelings of  Fear + Distrust",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from:\n- Mistrust\n- Fear of \"the other\"",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-kHN2eITX",
+      "attributes": {
+        "label": "Framing Question:  What forces account for  the health of the current state  of the free press in the U.S.?"
+      }
+    },
+    {
+      "_id": "elem-kNR9nswf",
+      "attributes": {
+        "label": "Connection  to Communities",
+        "element type": "Journalism",
+        "tags": [
+          "Journalism",
+          "Hypothesis #1",
+          "Hypothesis #4"
+        ],
+        "intervention type": "Indirect",
+        "intervention type #2": "Direct"
+      }
+    },
+    {
+      "_id": "elem-lEUA0sA5",
+      "attributes": {
+        "label": "Corruption",
+        "element type": "Democracy",
+        "tags": [
+          "Democracy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-oLpEUX31",
+      "attributes": {
+        "label": "Layoffs",
+        "element type": "Journalism",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-pXSUoI2q",
+      "attributes": {
+        "label": "The Attention  Economy",
+        "tags": [
+          "Attention Economy"
+        ]
+      }
+    },
+    {
+      "_id": "elem-qXDFVovK",
+      "attributes": {
+        "label": "Authoritarian  Leaders",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from:\n- Corruption",
+        "tags": [
+          "Authoritarianism/Populism",
+          "Frozen"
+        ]
+      }
+    },
+    {
+      "_id": "elem-qXcgqxZS",
+      "attributes": {
+        "label": "Desire for  Belief  Justification",
+        "element type": "Authoritarianism/Populism",
+        "description": "Condensed from:\n- Confirmation Bias\n- Sense of Community",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-rDjVx6Zt",
+      "attributes": {
+        "label": "Platform for  Traditionally  Marginalized  Voices",
+        "element type": "Media Growth",
+        "tags": [
+          "Media Growth"
+        ]
+      }
+    },
+    {
+      "_id": "elem-rRr5oGSH",
+      "attributes": {
+        "label": "Barriers  to Entry",
+        "element type": "Media Growth",
+        "tags": [
+          "Media Growth",
+          "Hypothesis #1"
+        ],
+        "intervention type": "Direct"
+      }
+    },
+    {
+      "_id": "elem-rjHGSgph",
+      "attributes": {
+        "label": "Explosive  Growth of  Media",
+        "element type": "Media Growth",
+        "description": "Condensed from:\n- Creating New Jobs + Digital Products\n- Volume of Information",
+        "tags": [
+          "Media Growth"
+        ],
+        "connection": ""
+      }
+    },
+    {
+      "_id": "elem-uU01sLf5",
+      "attributes": {
+        "label": "Innovation +  Experimentation",
+        "element type": "Media Growth",
+        "tags": [
+          "Journalism"
+        ]
+      }
+    },
+    {
+      "_id": "elem-vOOzKmZP",
+      "attributes": {
+        "label": "Vulnerability to  Manipulation",
+        "element type": "Authoritarianism/Populism",
+        "tags": [
+          "Authoritarianism/Populism",
+          "Attention Economy",
+          "Hypothesis #3"
+        ],
+        "intervention type": "Indirect"
+      }
+    },
+    {
+      "_id": "elem-xVrom2EA",
+      "attributes": {
+        "label": "Less News =  More Exploitation",
+        "tags": [
+          "Core Story"
+        ]
+      }
+    },
+    {
+      "_id": "elem-zHJhKqXA",
+      "attributes": {
+        "label": "Ability to  Navigate  Media",
+        "element type": "Information Confusion",
+        "description": "Condensed from:\n- Media Literacy\n- News Orgs Providing Education to Schools\n- Critical Thinking",
+        "tags": [
+          "Attention Economy",
+          "Hypothesis #2"
+        ],
+        "intervention type": "Direct"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-0OWxchIC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-hrkY0e91",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-0l3l6eLj",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-8KiNUxuV",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-16guBExl",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-FYzObEaB",
+      "to": "elem-cNa0Hk19"
+    },
+    {
+      "_id": "conn-1C2y3mzt",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-8MJrwoLi",
+      "to": "elem-rDjVx6Zt"
+    },
+    {
+      "_id": "conn-1aSSs5z4",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Democracy",
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-OBFvzlTM",
+      "to": "elem-8KiNUxuV"
+    },
+    {
+      "_id": "conn-2978OW3p",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy",
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-X0oGQ4qf"
+    },
+    {
+      "_id": "conn-2KP0yKI5",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Democracy",
+          "Hypothesis #2"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-cNa0Hk19"
+    },
+    {
+      "_id": "conn-2LsOE0nP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-OBFvzlTM",
+      "to": "elem-A9bymR9F"
+    },
+    {
+      "_id": "conn-2rPJNy1X",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-bbevspRj",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-3OHgxcv7",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-lEUA0sA5"
+    },
+    {
+      "_id": "conn-3bRyN3GZ",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-3f6T5DPT",
+      "to": "elem-zHJhKqXA"
+    },
+    {
+      "_id": "conn-48JD84Ra",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "connection": "Indirect Impact",
+        "tags": [
+          "Hypothesis #4",
+          "Journalism"
+        ]
+      },
+      "from": "elem-kNR9nswf",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-4PibaNGC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-3ZqKsXmV",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-4XZvTCSi",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-VnUgSZqs",
+      "to": "elem-zHJhKqXA"
+    },
+    {
+      "_id": "conn-4ktWld68",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-cNa0Hk19",
+      "to": "elem-6i2GJzlD"
+    },
+    {
+      "_id": "conn-5o7kxJ1e",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-"
+      },
+      "from": "elem-lEUA0sA5",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-6XghrH5q",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-rjHGSgph",
+      "to": "elem-rRr5oGSH"
+    },
+    {
+      "_id": "conn-6bbjyW44",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-JEAd29qI",
+      "to": "elem-2alzgvGK"
+    },
+    {
+      "_id": "conn-6jG1XomX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Attention Economy",
+          "Hypothesis #2"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-zHJhKqXA",
+      "to": "elem-0cGpFnVT"
+    },
+    {
+      "_id": "conn-7euujya6",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-OBFvzlTM",
+      "to": "elem-bWIuhKeW"
+    },
+    {
+      "_id": "conn-8Ep7DRlU",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-uU01sLf5",
+      "to": "elem-2qm6anBt"
+    },
+    {
+      "_id": "conn-8alAR4hS",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Media Growth",
+          "Authoritarianism/Populism",
+          "Hypothesis #1"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-NEnGcuIw",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-9CzbF9Qk",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Core Story",
+          "Hypothesis #2"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-BRBTRUFg",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Media Growth"
+        ]
+      },
+      "from": "elem-8KiNUxuV",
+      "to": "elem-rjHGSgph"
+    },
+    {
+      "_id": "conn-BXJBtE74",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-OBFvzlTM",
+      "to": "elem-lEUA0sA5"
+    },
+    {
+      "_id": "conn-CxoYdkUn",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-NEnGcuIw",
+      "to": "elem-1JyzUpNU"
+    },
+    {
+      "_id": "conn-EKG2SUZs",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-qXDFVovK",
+      "to": "elem-j7GdOicB"
+    },
+    {
+      "_id": "conn-ES00x7n6",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-NEnGcuIw",
+      "to": "elem-Iq50cxyf"
+    },
+    {
+      "_id": "conn-EXh9ZSLe",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-qXDFVovK",
+      "to": "elem-RJVPdOYY"
+    },
+    {
+      "_id": "conn-ElD4Ayt6",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-8MJrwoLi",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-EysvZeo9",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-Iq50cxyf",
+      "to": "elem-qXDFVovK"
+    },
+    {
+      "_id": "conn-FBWGR1KX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Media Growth",
+          "Hypothesis #1"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-8MJrwoLi",
+      "to": "elem-NEnGcuIw"
+    },
+    {
+      "_id": "conn-FXUsDYqa",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Dhas7WTa",
+      "to": "elem-6i2GJzlD"
+    },
+    {
+      "_id": "conn-FpTF9gFh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-buh1glc5",
+      "to": "elem-2alzgvGK"
+    },
+    {
+      "_id": "conn-G8Pox94i",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-YdgOnTG8",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-GT8FDP8s",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-E9SYtDoz",
+      "to": "elem-rDjVx6Zt"
+    },
+    {
+      "_id": "conn-HUszmYtx",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-Iq50cxyf",
+      "to": "elem-vOOzKmZP"
+    },
+    {
+      "_id": "conn-HzmL5MGR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Iq50cxyf",
+      "to": "elem-RJVPdOYY"
+    },
+    {
+      "_id": "conn-IN1LK8jL",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Media Growth"
+        ]
+      },
+      "from": "elem-8MJrwoLi",
+      "to": "elem-rDjVx6Zt"
+    },
+    {
+      "_id": "conn-IRa73XNP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-rDjVx6Zt",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-IUWVJLb7",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-JEAd29qI",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-IczxcHp3",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Democracy"
+        ]
+      },
+      "from": "elem-cNa0Hk19",
+      "to": "elem-OBFvzlTM"
+    },
+    {
+      "_id": "conn-JBXzszND",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Democracy"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-OBFvzlTM",
+      "to": "elem-0cGpFnVT"
+    },
+    {
+      "_id": "conn-JckhEZvZ",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-bWIuhKeW",
+      "to": "elem-3f6T5DPT"
+    },
+    {
+      "_id": "conn-Jlw3YDl6",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Core Story"
+        ],
+        "connection type": "-+"
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-JrmLCsYE",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-4RlywK06",
+      "to": "elem-57WZQTo3"
+    },
+    {
+      "_id": "conn-Jt1cYHUy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-JEAd29qI",
+      "to": "elem-7xFeVnpv"
+    },
+    {
+      "_id": "conn-KDsmbPPR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-6i2GJzlD",
+      "to": "elem-R9nkGROf"
+    },
+    {
+      "_id": "conn-Kffv22Gy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-YdgOnTG8",
+      "to": "elem-0cGpFnVT"
+    },
+    {
+      "_id": "conn-KylqXOou",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-EY57bIWJ",
+      "to": "elem-6i2GJzlD"
+    },
+    {
+      "_id": "conn-M4M2uUNe",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-8MJrwoLi",
+      "to": "elem-E9SYtDoz"
+    },
+    {
+      "_id": "conn-MhKsQhL9",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Core Story",
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-buh1glc5",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-N2q0cmaH",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-rRr5oGSH",
+      "to": "elem-NEnGcuIw"
+    },
+    {
+      "_id": "conn-O1OyFSkr",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-8MJrwoLi",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-PD9ENalR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Media Growth",
+          "Hypothesis #4"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-buh1glc5",
+      "to": "elem-8KiNUxuV"
+    },
+    {
+      "_id": "conn-PwFr1YP1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-07Z8NB0M",
+      "to": "elem-Q8cLnC4f"
+    },
+    {
+      "_id": "conn-QIxiHanj",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-8KiNUxuV",
+      "to": "elem-X0oGQ4qf"
+    },
+    {
+      "_id": "conn-QKWVC1Tr",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-uU01sLf5",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-Qsh0uS2u",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-rjHGSgph",
+      "to": "elem-uU01sLf5"
+    },
+    {
+      "_id": "conn-QszNDP7B",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-X0oGQ4qf",
+      "to": "elem-hrkY0e91"
+    },
+    {
+      "_id": "conn-R0ZLy2bU",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-qXcgqxZS",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-REB4vpDT",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-RQPYZopc",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-4RlywK06",
+      "to": "elem-QBCVWVMa"
+    },
+    {
+      "_id": "conn-RoChPT7G",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-2qm6anBt",
+      "to": "elem-uU01sLf5"
+    },
+    {
+      "_id": "conn-TBu6gdH1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Democracy"
+        ]
+      },
+      "from": "elem-buh1glc5",
+      "to": "elem-OBFvzlTM"
+    },
+    {
+      "_id": "conn-THUdaNmq",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-oLpEUX31",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-TOTEnZVP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-7xFeVnpv",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-TpqaIOg1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Core Story",
+          "Democracy"
+        ]
+      },
+      "from": "elem-Dhas7WTa",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-Urtll2jH",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-NEnGcuIw"
+    },
+    {
+      "_id": "conn-VVMU9VH9",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-Iq50cxyf",
+      "to": "elem-qXcgqxZS"
+    },
+    {
+      "_id": "conn-VYVxD24W",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-57WZQTo3",
+      "to": "elem-hbQ30b0i"
+    },
+    {
+      "_id": "conn-ViPfJPq7",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-NEnGcuIw",
+      "to": "elem-qXDFVovK"
+    },
+    {
+      "_id": "conn-W0aF6liN",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-JEAd29qI",
+      "to": "elem-oLpEUX31"
+    },
+    {
+      "_id": "conn-W3GRSfDy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-rRr5oGSH",
+      "to": "elem-8MJrwoLi"
+    },
+    {
+      "_id": "conn-W839ltyj",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-8KiNUxuV",
+      "to": "elem-OBFvzlTM"
+    },
+    {
+      "_id": "conn-WDOlQCq6",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Media Growth",
+          "Hypothesis #1"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-rRr5oGSH",
+      "to": "elem-8MJrwoLi"
+    },
+    {
+      "_id": "conn-XIINNnjb",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-X0oGQ4qf",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-Xk56zwug",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Hypothesis #1"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-8MJrwoLi",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-XlR5eL5L",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-rDjVx6Zt",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-Y46vPZC3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Journalism",
+          "Media Growth",
+          "Democracy",
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-8KiNUxuV",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-Yzm01oCo",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-rDjVx6Zt",
+      "to": "elem-8MJrwoLi"
+    },
+    {
+      "_id": "conn-Z8DZNnfG",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-1JyzUpNU",
+      "to": "elem-8KiNUxuV"
+    },
+    {
+      "_id": "conn-Zi5YBCVp",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Hypothesis #4",
+          "Journalism"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-kNR9nswf",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-ZqI1SY6p",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-hrkY0e91",
+      "to": "elem-uU01sLf5"
+    },
+    {
+      "_id": "conn-aPiI2Z5W",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-"
+      },
+      "from": "elem-rjHGSgph",
+      "to": "elem-zHJhKqXA"
+    },
+    {
+      "_id": "conn-b18jBsxO",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-zHJhKqXA",
+      "to": "elem-07Z8NB0M"
+    },
+    {
+      "_id": "conn-bdevrQ5T",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Journalism",
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-kNR9nswf",
+      "to": "elem-3ZqKsXmV"
+    },
+    {
+      "_id": "conn-bmuiGiqG",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-FYzObEaB",
+      "to": "elem-EY57bIWJ"
+    },
+    {
+      "_id": "conn-bqY2OqPA",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-hrkY0e91",
+      "to": "elem-2qm6anBt"
+    },
+    {
+      "_id": "conn-c3Y7RdpK",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-cOA7mNdT",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-A9bymR9F"
+    },
+    {
+      "_id": "conn-cupW6Em4",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-07Z8NB0M",
+      "to": "elem-OBFvzlTM"
+    },
+    {
+      "_id": "conn-dIpH0n0X",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-cXAETE3X",
+      "to": "elem-FYzObEaB"
+    },
+    {
+      "_id": "conn-enY6XJz3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-0cGpFnVT",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-euCvU6S5",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+"
+      },
+      "from": "elem-YdgOnTG8",
+      "to": "elem-7xFeVnpv"
+    },
+    {
+      "_id": "conn-ewlw3MlC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Media Growth"
+        ]
+      },
+      "from": "elem-rjHGSgph",
+      "to": "elem-rRr5oGSH"
+    },
+    {
+      "_id": "conn-eygKZJA4",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-j7GdOicB",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-gq0VcOOI",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Media Growth"
+        ]
+      },
+      "from": "elem-rRr5oGSH",
+      "to": "elem-NEnGcuIw"
+    },
+    {
+      "_id": "conn-gqa5KE4o",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Core Story",
+          "Democracy"
+        ]
+      },
+      "from": "elem-0cGpFnVT",
+      "to": "elem-Dhas7WTa"
+    },
+    {
+      "_id": "conn-hRTRv5nN",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-VnUgSZqs"
+    },
+    {
+      "_id": "conn-hTbzZjSf",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--"
+      },
+      "from": "elem-cNa0Hk19",
+      "to": "elem-8KiNUxuV"
+    },
+    {
+      "_id": "conn-hnD10ljR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-bbevspRj"
+    },
+    {
+      "_id": "conn-iLC1xFov",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Democracy"
+        ],
+        "connection type": "--"
+      },
+      "from": "elem-OBFvzlTM",
+      "to": "elem-Dhas7WTa"
+    },
+    {
+      "_id": "conn-ivCeZA6D",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-buh1glc5",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-jsiotosi",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Hypothesis #2"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-cNa0Hk19",
+      "to": "elem-8KiNUxuV"
+    },
+    {
+      "_id": "conn-kOBFl4gC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Journalism",
+          "Hypothesis #1",
+          "Hypothesis #4"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-YdgOnTG8",
+      "to": "elem-kNR9nswf"
+    },
+    {
+      "_id": "conn-kQ0HQ0SC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-Q8cLnC4f",
+      "to": "elem-bWIuhKeW"
+    },
+    {
+      "_id": "conn-kUVAs3lK",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-8KiNUxuV",
+      "to": "elem-rjHGSgph"
+    },
+    {
+      "_id": "conn-mVwbEQtz",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-0cGpFnVT",
+      "to": "elem-OBFvzlTM"
+    },
+    {
+      "_id": "conn-nTzbvXcH",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "--",
+        "tags": [
+          "Core Story",
+          "Democracy",
+          "Media Growth",
+          "Hypothesis #1"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-YdgOnTG8",
+      "to": "elem-0cGpFnVT"
+    },
+    {
+      "_id": "conn-otBVNhwT",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-2qm6anBt",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-rmZHIts8",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-2alzgvGK",
+      "to": "elem-VnUgSZqs"
+    },
+    {
+      "_id": "conn-sxZgA7Rc",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Core Story"
+        ]
+      },
+      "from": "elem-4RlywK06",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-t5y9xxr8",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-VnUgSZqs",
+      "to": "elem-zHJhKqXA"
+    },
+    {
+      "_id": "conn-t8P63HLV",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism",
+          "Hypothesis #3"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-vOOzKmZP",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-t9RQRMHw",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++"
+      },
+      "from": "elem-JEAd29qI",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-teiJb1yA",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Journalism",
+          "Media Growth"
+        ]
+      },
+      "from": "elem-8KiNUxuV",
+      "to": "elem-JEAd29qI"
+    },
+    {
+      "_id": "conn-tsbUFZSn",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-4RlywK06",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-v7p3BRXS",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-+",
+        "tags": [
+          "Attention Economy",
+          "Hypothesis #3"
+        ],
+        "connection": "Direct Impact"
+      },
+      "from": "elem-hbQ30b0i",
+      "to": "elem-vOOzKmZP"
+    },
+    {
+      "_id": "conn-vYroNGRh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Hypothesis #3"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-vOOzKmZP",
+      "to": "elem-buh1glc5"
+    },
+    {
+      "_id": "conn-vlnc7xje",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy",
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-vOOzKmZP",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-wB7vt3yH",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Unsustainable",
+          "Journalism"
+        ]
+      },
+      "from": "elem-X0oGQ4qf",
+      "to": "elem-bbevspRj"
+    },
+    {
+      "_id": "conn-x1pZEJof",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-Iq50cxyf",
+      "to": "elem-RJVPdOYY"
+    },
+    {
+      "_id": "conn-xHcfA5uR",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Attention Economy",
+          "Authoritarianism/Populism",
+          "Hypothesis #4"
+        ],
+        "connection": "Indirect Impact"
+      },
+      "from": "elem-2alzgvGK",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-y2k09ukd",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-"
+      },
+      "from": "elem-A9bymR9F",
+      "to": "elem-YdgOnTG8"
+    },
+    {
+      "_id": "conn-yXXn2ov2",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "from": "elem-uU01sLf5",
+      "to": "elem-QV7AS5xp"
+    },
+    {
+      "_id": "conn-yur6gOzC",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-rjHGSgph",
+      "to": "elem-uU01sLf5"
+    },
+    {
+      "_id": "conn-yyvGlXx5",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "tags": [
+          "Attention Economy"
+        ],
+        "connection type": "++"
+      },
+      "from": "elem-X0oGQ4qf",
+      "to": "elem-4RlywK06"
+    },
+    {
+      "_id": "conn-z93cSVXc",
+      "direction": "mutual",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "++",
+        "tags": [
+          "Authoritarianism/Populism"
+        ]
+      },
+      "from": "elem-Iq50cxyf",
+      "to": "elem-ItS6ZukR"
+    },
+    {
+      "_id": "conn-zZOFOLUP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+-",
+        "tags": [
+          "Attention Economy"
+        ]
+      },
+      "from": "elem-QBCVWVMa",
+      "to": "elem-0cGpFnVT"
+    }
+  ],
+  "loops": [
+    {
+      "_id": "loop-1NegubsH",
+      "attributes": {
+        "label": "Declining News Quality,  Declining Democracy",
+        "description": "[Yes, Sinclair Broadcast Group does cut local news, increase national news and tilt its stations rightward](https://www.washingtonpost.com/news/monkey-cage/wp/2018/04/10/yes-sinclair-broadcast-group-does-cut-local-news-increase-national-news-and-tilt-its-stations-rightward/?noredirect=on)\n\n[When local newspapers shrink, fewer people bother to run for mayor\n](https://www.niemanlab.org/2019/04/when-local-newspapers-shrink-fewer-people-bother-to-run-for-mayor/)\n\n[How we know journalism is good for democracy](https://localnewslab.org/2018/06/20/how-we-know-journalism-is-good-for-democracy/)\n\n[Why Losing Our Newspapers Is Breaking Our Politics](https://www.scientificamerican.com/article/why-losing-our-newspapers-is-breaking-our-politics/)\n\n[Yes, Sinclair Broadcast Group does cut local news, increase national news and tilt its stations rightward](https://www.washingtonpost.com/news/monkey-cage/wp/2018/04/10/yes-sinclair-broadcast-group-does-cut-local-news-increase-national-news-and-tilt-its-stations-rightward/?noredirect=on)\n\n[The Rise of a New Media Baron and the Emerging Threat of News Deserts](http://newspaperownership.com/wp-content/uploads/2016/09/07.UNC_RiseOfNewMediaBaron_SinglePage_01Sep2016-REDUCED.pdf)\n\n[The Media and Public Life: A History](https://www.wiley.com/en-us/The+Media+and+Public+Life%3A+A+History-p-9780745660219)\n\n[2020 World Press Freedom Index](https://rsf.org/en/ranking)\n\n[Scandal and Civility](https://global.oup.com/academic/product/scandal-and-civility-9780199764815?cc=us&lang=en&#)\n\n[Mistrust, Efficacy and the New Civics – a whitepaper for the Knight Foundation](http://www.ethanzuckerman.com/blog/2017/08/17/mistrust-efficacy-and-the-new-civics-a-whitepaper-for-the-knight-foundation/)\n\n[Postage Rates for Periodicals: A Narrative History](https://about.usps.com/who-we-are/postal-history/periodicals-postage-history.htm)\n\n[As Local News Outlets Shutter, Rural America Suffers Most](https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2019/10/21/as-local-news-outlets-shutter-rural-america-suffers-most)\n\n[Toward a Measure of Community Journalism](https://www.tandfonline.com/doi/abs/10.1080/15205430701668105)"
+      },
+      "connections": [
+        "conn-Y46vPZC3",
+        "conn-nTzbvXcH",
+        "conn-9CzbF9Qk",
+        "conn-2KP0yKI5",
+        "conn-IczxcHp3",
+        "conn-TBu6gdH1",
+        "conn-1aSSs5z4"
+      ]
+    },
+    {
+      "_id": "loop-28qjmfUv",
+      "attributes": {
+        "label": "Core Story"
+      },
+      "connections": [
+        "conn-Kffv22Gy",
+        "conn-enY6XJz3",
+        "conn-ivCeZA6D",
+        "conn-tsbUFZSn"
+      ]
+    },
+    {
+      "_id": "loop-2LOPxmF0",
+      "attributes": {
+        "label": "Story: Authoritarianism/Populism"
+      },
+      "connections": [
+        "conn-8alAR4hS",
+        "conn-FpTF9gFh",
+        "conn-Urtll2jH",
+        "conn-eygKZJA4",
+        "conn-EKG2SUZs",
+        "conn-z93cSVXc",
+        "conn-R0ZLy2bU",
+        "conn-t8P63HLV",
+        "conn-HUszmYtx",
+        "conn-VVMU9VH9",
+        "conn-EysvZeo9",
+        "conn-EXh9ZSLe",
+        "conn-ViPfJPq7",
+        "conn-x1pZEJof",
+        "conn-ES00x7n6"
+      ]
+    },
+    {
+      "_id": "loop-2OfbEaQd",
+      "attributes": {
+        "label": "New Business  Models",
+        "description": "[The Age of Surveillance Capitalism](https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/)\n\n[The Attention Merchants](http://www.timwu.org/AttentionMerchants.html)\n\n[Digital advertising in the US is finally bigger than print and television](https://www.vox.com/2019/2/20/18232433/digital-advertising-facebook-google-growth-tv-print-emarketer-2019)\n\n[The Platform Press: How Silicon Valley reengineered journalism](https://www.cjr.org/tow_center_reports/platform-press-how-silicon-valley-reengineered-journalism.php#executive-summary)\n\n[State of the News Media](https://www.pewresearch.org/topics/state-of-the-news-media/)\n\n[Throwing Rocks at the Google Bus](https://rushkoff.com/books/throwing-rocks-at-the-google-bus/)\n\n[All the News That's Fit to Sell: How the Market Transforms Information into News](https://press.princeton.edu/books/paperback/9780691123677/all-the-news-thats-fit-to-sell)\n\n[How Facebook Screwed Us All](https://www.motherjones.com/politics/2019/02/how-facebook-screwed-us-all/)\n\n[How Much of the Internet Is Fake? Turns Out, a Lot of It, Actually.](https://nymag.com/intelligencer/2018/12/how-much-of-the-internet-is-fake.html)"
+      },
+      "connections": [
+        "conn-6bbjyW44",
+        "conn-2978OW3p",
+        "conn-QszNDP7B",
+        "conn-0OWxchIC",
+        "conn-hnD10ljR",
+        "conn-2rPJNy1X",
+        "conn-wB7vt3yH",
+        "conn-ZqI1SY6p",
+        "conn-bqY2OqPA",
+        "conn-RoChPT7G",
+        "conn-otBVNhwT",
+        "conn-yXXn2ov2"
+      ]
+    },
+    {
+      "_id": "loop-4ky24ULo",
+      "attributes": {
+        "label": "Diversity"
+      },
+      "connections": [
+        "conn-M4M2uUNe",
+        "conn-GT8FDP8s",
+        "conn-Yzm01oCo"
+      ]
+    },
+    {
+      "_id": "loop-5PVPwaXc",
+      "attributes": {
+        "label": "Vulture Cycle",
+        "description": "[FCC rolls back ownership regulations for big media companies](https://www.poynter.org/business-work/2017/fcc-rolls-back-ownership-regulations-for-big-media-companies-2/)\n\n[7,800 people lost their media jobs in a 2019 landslide](https://www.businessinsider.com/2019-media-layoffs-job-cuts-at-buzzfeed-huffpost-vice-details-2019-2)\n\n[A Paradox at the Heart of the Newspaper Crisis](https://www.nytimes.com/2019/08/01/business/media/news-deserts-media-newspapers.html)\n\n[The Rise of a New Media Baron and the Emerging Threat of News Deserts](http://newspaperownership.com/wp-content/uploads/2016/09/07.UNC_RiseOfNewMediaBaron_SinglePage_01Sep2016-REDUCED.pdf)\n\n[Newsonomics: With its merger approved, the new Gannett readies the cost-cutting knife](https://www.niemanlab.org/2019/11/newsonomics-with-its-merger-approved-the-new-gannett-readies-the-cost-cutting-knife/?relatedstory)\n\n[Media Cross-ownership in the United States](https://en.wikipedia.org/wiki/Media_cross-ownership_in_the_United_States)\n\n[What is private equity, and why is it killing everything you love?](https://www.vox.com/the-goods/2020/1/6/21024740/private-equity-taylor-swift-toys-r-us-elizabeth-warren)"
+      },
+      "connections": [
+        "conn-G8Pox94i",
+        "conn-Jt1cYHUy",
+        "conn-TOTEnZVP"
+      ]
+    },
+    {
+      "_id": "loop-8MwKrPLB",
+      "attributes": {
+        "label": "Story 2"
+      },
+      "connections": [
+        "conn-gq0VcOOI",
+        "conn-8alAR4hS",
+        "conn-ewlw3MlC",
+        "conn-WDOlQCq6",
+        "conn-O1OyFSkr",
+        "conn-yXXn2ov2",
+        "conn-RoChPT7G",
+        "conn-otBVNhwT",
+        "conn-Qsh0uS2u",
+        "conn-aPiI2Z5W",
+        "conn-BRBTRUFg",
+        "conn-JBXzszND",
+        "conn-IczxcHp3",
+        "conn-2KP0yKI5",
+        "conn-PD9ENalR",
+        "conn-1aSSs5z4",
+        "conn-Y46vPZC3"
+      ]
+    },
+    {
+      "_id": "loop-Bi5saN9s",
+      "attributes": {
+        "label": "Media Growth  + Media Literacy"
+      },
+      "connections": [
+        "conn-PwFr1YP1",
+        "conn-cupW6Em4",
+        "conn-7euujya6",
+        "conn-kQ0HQ0SC",
+        "conn-JckhEZvZ",
+        "conn-3bRyN3GZ",
+        "conn-b18jBsxO",
+        "conn-t5y9xxr8",
+        "conn-rmZHIts8"
+      ]
+    },
+    {
+      "_id": "loop-C9uaftgs",
+      "attributes": {
+        "label": "Media Growth  + Media Literacy"
+      },
+      "connections": [
+        "conn-RoChPT7G",
+        "conn-hRTRv5nN",
+        "conn-4XZvTCSi",
+        "conn-6jG1XomX",
+        "conn-9CzbF9Qk",
+        "conn-PD9ENalR",
+        "conn-BRBTRUFg",
+        "conn-aPiI2Z5W",
+        "conn-JBXzszND",
+        "conn-1aSSs5z4"
+      ]
+    },
+    {
+      "_id": "loop-EB5zmfkD",
+      "attributes": {
+        "label": "The  Exploitation  of Our Attention",
+        "description": "[Hacking the Attention Economy](https://points.datasociety.net/hacking-the-attention-economy-9fa1daca7a37)\n\n[The Making of a YouTube Radical](https://www.nytimes.com/interactive/2019/06/08/technology/youtube-radical.html)\n\n[YouTube Executives Ignored Warnings, Letting Toxic Videos Run Rampant](https://www.bloomberg.com/news/features/2019-04-02/youtube-executives-ignored-warnings-letting-toxic-videos-run-rampant)\n\n[The strange story of Section 230, the obscure law that created our flawed, broken internet](https://www.wired.co.uk/article/section-230-communications-decency-act)\n\n[https://www.scientificamerican.com/article/cognitive-ability-and-vulnerability-to-fake-news/](https://www.scientificamerican.com/article/cognitive-ability-and-vulnerability-to-fake-news/)\n\n[How a handful of tech companies control billions of minds every day](https://www.ted.com/talks/tristan_harris_how_a_handful_of_tech_companies_control_billions_of_minds_every_day)\n\n[The Age of Surveillance Capitalism](https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/)\n\n[The Filter Bubble](https://www.penguinrandomhouse.com/books/309214/the-filter-bubble-by-eli-pariser/9780143121237/)\n\n[The Attention Merchants](http://www.timwu.org/AttentionMerchants.html)\n\n[Algorithms of Oppression](https://nyupress.org/9781479837243/algorithms-of-oppression/)\n\n[Predictably Irrational](http://danariely.com/books/predictably-irrational/)\n\n[The Death of Expertise](https://global.oup.com/academic/product/the-death-of-expertise-9780190469412?cc=us&lang=en&)\n\n[The Glass Cage: How Our Computers Are Changing Us](https://www.amazon.com/Glass-Cage-Automation-Us-ebook/dp/B00J9PQXOE)\n\n[Move Fast and Break Things: How Facebook, Google, and Amazon Cornered Culture and Undermined Democracy Hardcover – April 18, 2017](https://www.amazon.com/Move-Fast-Break-Things-Undermined/dp/0316275778)\n\n[How Facebook Screwed Us All](https://www.motherjones.com/politics/2019/02/how-facebook-screwed-us-all/)\n\n[Trudeaus and Trudeaun’ts — memes polarize in Canadian elections](https://medium.com/dfrlab/trudeaus-and-trudeaunts-memes-have-an-impact-during-canadian-elections-4c842574dedc)\n\n[The internet is emotionally abusing us. And we can’t quit it.](https://www.youtube.com/watch?v=MBh7K5ooF2s&feature=youtu.be)"
+      },
+      "connections": [
+        "conn-FpTF9gFh",
+        "conn-9CzbF9Qk",
+        "conn-xHcfA5uR",
+        "conn-RQPYZopc",
+        "conn-zZOFOLUP"
+      ]
+    },
+    {
+      "_id": "loop-FY5dRkxd",
+      "attributes": {
+        "label": "Story 5"
+      },
+      "connections": [
+        "conn-gq0VcOOI",
+        "conn-8alAR4hS",
+        "conn-ewlw3MlC",
+        "conn-WDOlQCq6",
+        "conn-O1OyFSkr",
+        "conn-yXXn2ov2",
+        "conn-RoChPT7G",
+        "conn-otBVNhwT",
+        "conn-Qsh0uS2u",
+        "conn-aPiI2Z5W",
+        "conn-BRBTRUFg"
+      ]
+    },
+    {
+      "_id": "loop-IAasgqtA",
+      "attributes": {
+        "label": "Deregulation &  Explosive Growth",
+        "description": "[Media Regulation: Crash Course Government and Politics #45](https://www.youtube.com/watch?v=f6LKl4RKIew)\n\n[This Analysis Shows How Viral Fake Election News Stories Outperformed Real News On Facebook](https://www.buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook)\n\n[The strange story of Section 230, the obscure law that created our flawed, broken internet](https://www.wired.co.uk/article/section-230-communications-decency-act)\n\n[FCC rolls back ownership regulations for big media companies](https://www.poynter.org/business-work/2017/fcc-rolls-back-ownership-regulations-for-big-media-companies-2/)\n\n[The Fight Against Disinformation in the U.S.](https://shorensteincenter.org/wp-content/uploads/2018/10/The-Fight-Against-Disinformation.pdf)\n\n[The Platform Press: How Silicon Valley reengineered journalism](https://www.cjr.org/tow_center_reports/platform-press-how-silicon-valley-reengineered-journalism.php#executive-summary)\n\n[The Big Switch: Rewiring the World from Edison to Google](https://www.indiebound.org/book/9780393345223)"
+      },
+      "connections": [
+        "conn-FBWGR1KX",
+        "conn-ewlw3MlC",
+        "conn-WDOlQCq6",
+        "conn-PD9ENalR",
+        "conn-8alAR4hS",
+        "conn-BRBTRUFg",
+        "conn-Qsh0uS2u",
+        "conn-O1OyFSkr"
+      ]
+    },
+    {
+      "_id": "loop-JZiBgXTK",
+      "attributes": {
+        "label": "Story: Journalism"
+      },
+      "connections": [
+        "conn-kOBFl4gC",
+        "conn-bdevrQ5T",
+        "conn-4PibaNGC",
+        "conn-W0aF6liN",
+        "conn-THUdaNmq",
+        "conn-2rPJNy1X",
+        "conn-0OWxchIC",
+        "conn-QszNDP7B",
+        "conn-wB7vt3yH",
+        "conn-2978OW3p",
+        "conn-hnD10ljR",
+        "conn-6bbjyW44",
+        "conn-ZqI1SY6p",
+        "conn-bqY2OqPA",
+        "conn-RoChPT7G",
+        "conn-yXXn2ov2",
+        "conn-otBVNhwT"
+      ]
+    },
+    {
+      "_id": "loop-KVh0jjtS",
+      "attributes": {
+        "label": "Story: Attention Economy"
+      },
+      "connections": [
+        "conn-RQPYZopc",
+        "conn-zZOFOLUP",
+        "conn-6jG1XomX",
+        "conn-4XZvTCSi",
+        "conn-JrmLCsYE",
+        "conn-vlnc7xje",
+        "conn-v7p3BRXS",
+        "conn-VYVxD24W",
+        "conn-xHcfA5uR",
+        "conn-hRTRv5nN",
+        "conn-FpTF9gFh"
+      ]
+    },
+    {
+      "_id": "loop-L7HJ5xqF",
+      "attributes": {
+        "label": "Story 3"
+      },
+      "connections": [
+        "conn-FpTF9gFh",
+        "conn-8alAR4hS",
+        "conn-Urtll2jH",
+        "conn-eygKZJA4",
+        "conn-R0ZLy2bU",
+        "conn-t8P63HLV",
+        "conn-HUszmYtx",
+        "conn-VVMU9VH9",
+        "conn-z93cSVXc",
+        "conn-EKG2SUZs",
+        "conn-EysvZeo9",
+        "conn-x1pZEJof",
+        "conn-ViPfJPq7",
+        "conn-ES00x7n6"
+      ]
+    },
+    {
+      "_id": "loop-T5pJEJFL",
+      "attributes": {
+        "label": "Vulture  Loop"
+      },
+      "connections": [
+        "conn-TOTEnZVP",
+        "conn-euCvU6S5"
+      ]
+    },
+    {
+      "_id": "loop-Tq7OHITV",
+      "attributes": {
+        "label": "New Business  Models"
+      },
+      "connections": [
+        "conn-RoChPT7G",
+        "conn-6bbjyW44",
+        "conn-2rPJNy1X",
+        "conn-hnD10ljR",
+        "conn-2978OW3p",
+        "conn-wB7vt3yH",
+        "conn-0OWxchIC",
+        "conn-QszNDP7B",
+        "conn-bqY2OqPA",
+        "conn-8Ep7DRlU",
+        "conn-ZqI1SY6p",
+        "conn-otBVNhwT"
+      ]
+    },
+    {
+      "_id": "loop-XErsIZqm",
+      "attributes": {
+        "label": "Story: Democracy"
+      },
+      "connections": [
+        "conn-9CzbF9Qk",
+        "conn-JBXzszND",
+        "conn-TBu6gdH1",
+        "conn-PD9ENalR",
+        "conn-IczxcHp3",
+        "conn-1aSSs5z4",
+        "conn-2KP0yKI5",
+        "conn-Y46vPZC3",
+        "conn-nTzbvXcH"
+      ]
+    },
+    {
+      "_id": "loop-XHjlytLh",
+      "attributes": {
+        "label": "Core Story",
+        "tags": [
+          "Core Story"
+        ],
+        "description": "[How we know journalism is good for democracy](https://localnewslab.org/2018/06/20/how-we-know-journalism-is-good-for-democracy/)\n\n[Ledger of Harms](https://ledger.humanetech.com/)\n\n[Addiction by Design](https://www.natashadowschull.org/addiction-by-design/)\n\n[A Paradox at the Heart of the Newspaper Crisis](https://www.nytimes.com/2019/08/01/business/media/news-deserts-media-newspapers.html)\n\n[The Rise of a New Media Baron and the Emerging Threat of News Deserts](http://newspaperownership.com/wp-content/uploads/2016/09/07.UNC_RiseOfNewMediaBaron_SinglePage_01Sep2016-REDUCED.pdf)\n\n[The Expanding News Desert](https://www.usnewsdeserts.com/)\n\n[The Platform Press: How Silicon Valley reengineered journalism](https://www.cjr.org/tow_center_reports/platform-press-how-silicon-valley-reengineered-journalism.php#executive-summary)\n\n[Four problems for news and democracy](https://medium.com/trust-media-and-democracy/we-know-the-news-is-in-crisis-5d1c4fbf7691)\n\n[State of the News Media](https://www.pewresearch.org/topics/state-of-the-news-media/)\n\n[The Ethics of Invention: Technology and the Human Future](https://books.google.com/books/about/The_Ethics_of_Invention_Technology_and_t.html?id=nBqZCgAAQBAJ)\n\n[Signals and Boundaries: Building Blocks for Complex Adaptive Systems](https://mitpress.mit.edu/books/signals-and-boundaries)\n\n[Behave: The biology of humans at our best and worst](https://www.penguinrandomhouse.com/books/311787/behave-by-robert-m-sapolsky/)\n\n[Normal Accidents](https://press.princeton.edu/books/paperback/9780691004129/normal-accidents)\n\n[Putting a price tag on local news](https://knightfoundation.org/reports/putting-a-price-tag-on-local-news/)"
+      },
+      "connections": [
+        "conn-nTzbvXcH",
+        "conn-gqa5KE4o",
+        "conn-TpqaIOg1",
+        "conn-9CzbF9Qk",
+        "conn-MhKsQhL9",
+        "conn-sxZgA7Rc"
+      ]
+    },
+    {
+      "_id": "loop-ZXABnkZ8",
+      "attributes": {
+        "label": "Story 4"
+      },
+      "connections": [
+        "conn-6jG1XomX",
+        "conn-4XZvTCSi",
+        "conn-zZOFOLUP",
+        "conn-RQPYZopc",
+        "conn-xHcfA5uR",
+        "conn-hRTRv5nN",
+        "conn-FpTF9gFh",
+        "conn-VYVxD24W",
+        "conn-JrmLCsYE",
+        "conn-vlnc7xje",
+        "conn-MhKsQhL9",
+        "conn-8alAR4hS",
+        "conn-Urtll2jH"
+      ]
+    },
+    {
+      "_id": "loop-bPfqTesL",
+      "attributes": {
+        "label": "Story: Deep Structure"
+      },
+      "connections": [
+        "conn-9CzbF9Qk",
+        "conn-MhKsQhL9",
+        "conn-sxZgA7Rc",
+        "conn-nTzbvXcH"
+      ]
+    },
+    {
+      "_id": "loop-bVsmonz7",
+      "attributes": {
+        "label": "Deregulation +  Explosive Growth"
+      },
+      "connections": [
+        "conn-BRBTRUFg",
+        "conn-ewlw3MlC",
+        "conn-gq0VcOOI",
+        "conn-8alAR4hS",
+        "conn-PD9ENalR",
+        "conn-Qsh0uS2u",
+        "conn-yXXn2ov2",
+        "conn-WDOlQCq6",
+        "conn-O1OyFSkr"
+      ]
+    },
+    {
+      "_id": "loop-fXUxD7P6",
+      "attributes": {
+        "label": "Quality of  Local News",
+        "description": "[7,800 people lost their media jobs in a 2019 landslide](https://www.businessinsider.com/2019-media-layoffs-job-cuts-at-buzzfeed-huffpost-vice-details-2019-2)\n\n[Yes, Sinclair Broadcast Group does cut local news, increase national news and tilt its stations rightward](https://www.washingtonpost.com/news/monkey-cage/wp/2018/04/10/yes-sinclair-broadcast-group-does-cut-local-news-increase-national-news-and-tilt-its-stations-rightward/?noredirect=on)\n\n[The Rise of a New Media Baron and the Emerging Threat of News Deserts](http://newspaperownership.com/wp-content/uploads/2016/09/07.UNC_RiseOfNewMediaBaron_SinglePage_01Sep2016-REDUCED.pdf)\n\n[The Expanding News Desert](https://www.usnewsdeserts.com/)\n\n[U.S. newspapers have shed half of their newsroom employees since 2008](https://www.pewresearch.org/fact-tank/2020/04/20/u-s-newsroom-employment-has-dropped-by-a-quarter-since-2008/)\n\n[The Messy Fourth Estate](https://gen.medium.com/the-messy-fourth-estate-a42c1586b657)\n\n[All the News That's Fit to Sell: How the Market Transforms Information into News](https://press.princeton.edu/books/paperback/9780691123677/all-the-news-thats-fit-to-sell)\n\n[Mistrust, Efficacy and the New Civics – a whitepaper for the Knight Foundation](http://www.ethanzuckerman.com/blog/2017/08/17/mistrust-efficacy-and-the-new-civics-a-whitepaper-for-the-knight-foundation/)\n\n[Hundreds of ‘pink slime’ local news outlets are distributing algorithmic stories and conservative talking points](cjr.org/tow_center_reports/hundreds-of-pink-slime-local-news-outlets-are-distributing-algorithmic-stories-conservative-talking-points.php?mc_cid=0ec6cb4896&mc_eid=cda7d2145a)\n\n[As Local News Outlets Shutter, Rural America Suffers Most](https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2019/10/21/as-local-news-outlets-shutter-rural-america-suffers-most)\n\n[Toward a Measure of Community Journalism](https://www.tandfonline.com/doi/abs/10.1080/15205430701668105)"
+      },
+      "connections": [
+        "conn-kOBFl4gC",
+        "conn-bdevrQ5T",
+        "conn-THUdaNmq",
+        "conn-4PibaNGC",
+        "conn-W0aF6liN"
+      ]
+    },
+    {
+      "_id": "loop-hHCUWb6k",
+      "attributes": {
+        "label": "Attention  Economy",
+        "description": "[Hacking the Attention Economy](https://points.datasociety.net/hacking-the-attention-economy-9fa1daca7a37)\n\n[Study: On Twitter, false news travels faster than true stories](https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308)\n\n[Global attention span is narrowing and trends don't last as long, study reveals](https://www.theguardian.com/society/2019/apr/16/got-a-minute-global-attention-span-is-narrowing-study-reveals)\n\n[How a handful of tech companies control billions of minds every day](https://www.ted.com/talks/tristan_harris_how_a_handful_of_tech_companies_control_billions_of_minds_every_day)\n\n[Addiction by Design](https://www.natashadowschull.org/addiction-by-design/)\n\n[The Attention Merchants](http://www.timwu.org/AttentionMerchants.html)\n\n[Throwing Rocks at the Google Bus](https://rushkoff.com/books/throwing-rocks-at-the-google-bus/)\n\n[The Glass Cage: How Our Computers Are Changing Us](https://www.amazon.com/Glass-Cage-Automation-Us-ebook/dp/B00J9PQXOE)"
+      },
+      "connections": [
+        "conn-JrmLCsYE",
+        "conn-VYVxD24W",
+        "conn-vlnc7xje",
+        "conn-v7p3BRXS"
+      ]
+    },
+    {
+      "_id": "loop-hSceHHU7",
+      "attributes": {
+        "label": "Quality of Local News"
+      },
+      "connections": [
+        "conn-THUdaNmq",
+        "conn-kOBFl4gC",
+        "conn-bdevrQ5T",
+        "conn-4PibaNGC",
+        "conn-W0aF6liN"
+      ]
+    },
+    {
+      "_id": "loop-kxRLijK7",
+      "attributes": {
+        "label": "Media Growth +  Media Literacy"
+      },
+      "connections": [
+        "conn-hRTRv5nN",
+        "conn-4XZvTCSi",
+        "conn-6jG1XomX",
+        "conn-9CzbF9Qk",
+        "conn-PD9ENalR",
+        "conn-BRBTRUFg",
+        "conn-aPiI2Z5W",
+        "conn-JBXzszND",
+        "conn-mVwbEQtz",
+        "conn-W839ltyj",
+        "conn-1aSSs5z4"
+      ]
+    },
+    {
+      "_id": "loop-oC94gENk",
+      "attributes": {
+        "label": "Deregulation &  Explosive Growth"
+      },
+      "connections": [
+        "conn-CxoYdkUn",
+        "conn-Z8DZNnfG",
+        "conn-kUVAs3lK",
+        "conn-6XghrH5q",
+        "conn-N2q0cmaH",
+        "conn-W3GRSfDy",
+        "conn-ElD4Ayt6",
+        "conn-QKWVC1Tr",
+        "conn-yur6gOzC"
+      ]
+    },
+    {
+      "_id": "loop-qOL5JIgO",
+      "attributes": {
+        "label": "Story 1"
+      },
+      "connections": [
+        "conn-THUdaNmq",
+        "conn-kOBFl4gC",
+        "conn-Y46vPZC3",
+        "conn-bdevrQ5T",
+        "conn-4PibaNGC",
+        "conn-W0aF6liN",
+        "conn-0OWxchIC",
+        "conn-ZqI1SY6p",
+        "conn-RoChPT7G",
+        "conn-yXXn2ov2",
+        "conn-otBVNhwT",
+        "conn-bqY2OqPA",
+        "conn-2rPJNy1X",
+        "conn-QszNDP7B",
+        "conn-wB7vt3yH",
+        "conn-hnD10ljR",
+        "conn-6bbjyW44",
+        "conn-2978OW3p"
+      ]
+    },
+    {
+      "_id": "loop-rBZGMowI",
+      "attributes": {
+        "label": "Core Story"
+      },
+      "connections": [
+        "conn-nTzbvXcH",
+        "conn-sxZgA7Rc",
+        "conn-MhKsQhL9",
+        "conn-TpqaIOg1",
+        "conn-gqa5KE4o"
+      ]
+    },
+    {
+      "_id": "loop-s4Jp8ye9",
+      "attributes": {
+        "label": "Media Growth  + Media Literacy",
+        "description": "[Yes, Sinclair Broadcast Group does cut local news, increase national news and tilt its stations rightward](https://www.washingtonpost.com/news/monkey-cage/wp/2018/04/10/yes-sinclair-broadcast-group-does-cut-local-news-increase-national-news-and-tilt-its-stations-rightward/?noredirect=on)\n\n[Hacking the Attention Economy](https://points.datasociety.net/hacking-the-attention-economy-9fa1daca7a37)\n\n[Study: On Twitter, false news travels faster than true stories](https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308)\n\n[This Analysis Shows How Viral Fake Election News Stories Outperformed Real News On Facebook](https://www.buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook)\n\n[https://www.scientificamerican.com/article/cognitive-ability-and-vulnerability-to-fake-news/](https://www.scientificamerican.com/article/cognitive-ability-and-vulnerability-to-fake-news/)\n\n[Most Students Don’t Know When News Is Fake, Stanford Study Finds](https://www.wsj.com/articles/most-students-dont-know-when-news-is-fake-stanford-study-finds-1479752576)\n\n[The Biology of Disinformation](https://www.iftf.org/partner-with-iftf/research-labs/digital-intelligence-lab/research-archive/biology-of-disinformation/)\n\n[The Filter Bubble](https://www.penguinrandomhouse.com/books/309214/the-filter-bubble-by-eli-pariser/9780143121237/)\n\n[Partisans Remain Sharply Divided in Their Attitudes About the News Media](https://www.journalism.org/2018/09/25/partisans-remain-sharply-divided-in-their-attitudes-about-the-news-media/)\n\n[Communication and Empire: Media, Markets, and Globalization, 1860–1930](https://www.dukeupress.edu/communication-and-empire)\n\n[Rewire: Digital Cosmopolitans in the Age of Connection](http://www.ethanzuckerman.com/blog/rewire-digital-cosmopolitans-in-the-age-of-connection/)\n\n[Understanding Information Disorder](https://firstdraftnews.org/wp-content/uploads/2019/10/Information_Disorder_Digital_AW.pdf?x50668)\n\n[These Hugely Popular Local News Sites In The US And Canada Are Fake](https://www.buzzfeednews.com/article/craigsilverman/fake-local-news-sites-albany-edmonton)\n\n[How Much of the Internet Is Fake? Turns Out, a Lot of It, Actually.](https://nymag.com/intelligencer/2018/12/how-much-of-the-internet-is-fake.html)\n\n[Maybe It’s Not YouTube’s Algorithm That Radicalizes People](https://www.wired.com/story/not-youtubes-algorithm-radicalizes-people/)"
+      },
+      "connections": [
+        "conn-hRTRv5nN",
+        "conn-4XZvTCSi",
+        "conn-6jG1XomX",
+        "conn-9CzbF9Qk",
+        "conn-PD9ENalR",
+        "conn-BRBTRUFg",
+        "conn-aPiI2Z5W",
+        "conn-JBXzszND",
+        "conn-1aSSs5z4"
+      ]
+    },
+    {
+      "_id": "loop-wuufa79q",
+      "attributes": {
+        "label": "sample"
+      },
+      "connections": [
+        "conn-O1OyFSkr"
+      ]
+    },
+    {
+      "_id": "loop-x8m3WoyM",
+      "attributes": {
+        "label": "Story: Media Growth"
+      },
+      "connections": [
+        "conn-gq0VcOOI",
+        "conn-ewlw3MlC",
+        "conn-WDOlQCq6",
+        "conn-O1OyFSkr",
+        "conn-BRBTRUFg",
+        "conn-aPiI2Z5W",
+        "conn-Qsh0uS2u",
+        "conn-yXXn2ov2",
+        "conn-6jG1XomX",
+        "conn-8alAR4hS",
+        "conn-PD9ENalR"
+      ]
+    },
+    {
+      "_id": "loop-xoC7SLt2",
+      "attributes": {
+        "label": "Vulture Cycle",
+        "tags": [
+          "Journalism"
+        ]
+      },
+      "connections": [
+        "conn-Jt1cYHUy",
+        "conn-G8Pox94i",
+        "conn-TOTEnZVP"
+      ]
+    },
+    {
+      "_id": "loop-ySLVN6Yb",
+      "attributes": {
+        "label": "Story: Democracy"
+      },
+      "connections": [
+        "conn-JBXzszND",
+        "conn-IczxcHp3",
+        "conn-2KP0yKI5",
+        "conn-6jG1XomX",
+        "conn-Y46vPZC3",
+        "conn-1aSSs5z4",
+        "conn-PD9ENalR",
+        "conn-9CzbF9Qk",
+        "conn-TBu6gdH1"
+      ]
+    },
+    {
+      "_id": "loop-zcjD0mvc",
+      "attributes": {
+        "label": "CORE STORY"
+      },
+      "connections": [
+        "conn-9CzbF9Qk",
+        "conn-MhKsQhL9",
+        "conn-sxZgA7Rc",
+        "conn-nTzbvXcH"
+      ]
+    },
+    {
+      "_id": "loop-zdhxtRYZ",
+      "attributes": {
+        "label": "Rise of  Authoritarian  Leaders + Media",
+        "description": "[This Analysis Shows How Viral Fake Election News Stories Outperformed Real News On Facebook](https://www.buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook)\n\n[The Making of a YouTube Radical](https://www.nytimes.com/interactive/2019/06/08/technology/youtube-radical.html)\n\n[Why Losing Our Newspapers Is Breaking Our Politics](https://www.scientificamerican.com/article/why-losing-our-newspapers-is-breaking-our-politics/)\n\n[Machine Politics](https://harpers.org/2019/01/machine-politics/)\n\n[The Fight Against Disinformation in the U.S.](https://shorensteincenter.org/wp-content/uploads/2018/10/The-Fight-Against-Disinformation.pdf)\n\n[The Biology of Disinformation](https://www.iftf.org/partner-with-iftf/research-labs/digital-intelligence-lab/research-archive/biology-of-disinformation/)\n\n[Partisans Remain Sharply Divided in Their Attitudes About the News Media](https://www.journalism.org/2018/09/25/partisans-remain-sharply-divided-in-their-attitudes-about-the-news-media/)\n\n[Yes, Sinclair Broadcast Group does cut local news, increase national news and tilt its stations rightward](https://www.washingtonpost.com/news/monkey-cage/wp/2018/04/10/yes-sinclair-broadcast-group-does-cut-local-news-increase-national-news-and-tilt-its-stations-rightward/?noredirect=on)\n\n[Committee to Protect Journalists](https://cpj.org/data/killed/?status=Killed&motiveConfirmed%5B%5D=Confirmed&type%5B%5D=Journalist&start_year=1992&end_year=2019&group_by=year)\n\n[Predictably Irrational](http://danariely.com/books/predictably-irrational/)\n\n[The Death of Expertise](https://global.oup.com/academic/product/the-death-of-expertise-9780190469412?cc=us&lang=en&)\n\n[Fantasyland, How America Went Haywire: A 500-year History](https://www.penguinrandomhouse.com/books/209776/fantasyland-by-kurt-andersen/)\n\n[Move Fast and Break Things: How Facebook, Google, and Amazon Cornered Culture and Undermined Democracy Hardcover – April 18, 2017](https://www.amazon.com/Move-Fast-Break-Things-Undermined/dp/0316275778)\n\n[Selling the Great War: The Making of American Propaganda](https://us.macmillan.com/books/9780230619593)\n\n[Understanding Information Disorder](https://firstdraftnews.org/wp-content/uploads/2019/10/Information_Disorder_Digital_AW.pdf?x50668)\n\n[How Facebook Screwed Us All](https://www.motherjones.com/politics/2019/02/how-facebook-screwed-us-all/)\n\n[Hundreds of ‘pink slime’ local news outlets are distributing algorithmic stories and conservative talking points](cjr.org/tow_center_reports/hundreds-of-pink-slime-local-news-outlets-are-distributing-algorithmic-stories-conservative-talking-points.php?mc_cid=0ec6cb4896&mc_eid=cda7d2145a)\n\n[The Surprising Nuance Behind the Russian Troll Strategy](https://medium.com/s/story/the-trolls-within-how-russian-information-operations-infiltrated-online-communities-691fb969b9e4)\n\n[How Polarized Are Online and Offline News Audiences? A Comparative Analysis of Twelve Countries](https://journals.sagepub.com/doi/full/10.1177/1940161219892768?journalCode=hijb)\n\n[Trudeaus and Trudeaun’ts — memes polarize in Canadian elections](https://medium.com/dfrlab/trudeaus-and-trudeaunts-memes-have-an-impact-during-canadian-elections-4c842574dedc)\n\n[The Problem of Political Advertising on Social Media](https://www.newyorker.com/tech/annals-of-technology/the-problem-of-political-advertising-on-social-media)\n\n[Bots Are Destroying Political Discourse As We Know It](https://www.theatlantic.com/technology/archive/2020/01/future-politics-bots-drowning-out-humans/604489/)"
+      },
+      "connections": [
+        "conn-Urtll2jH",
+        "conn-ES00x7n6",
+        "conn-x1pZEJof",
+        "conn-EXh9ZSLe",
+        "conn-ViPfJPq7",
+        "conn-EysvZeo9",
+        "conn-z93cSVXc",
+        "conn-HUszmYtx",
+        "conn-VVMU9VH9",
+        "conn-t8P63HLV",
+        "conn-R0ZLy2bU",
+        "conn-EKG2SUZs",
+        "conn-eygKZJA4"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "_id": "map-0XivMycj",
+      "name": "Wicked Problem Task Force (Full Map, June 2020)",
+      "description": "![J+D_primary_logotype_RGB_Pink-6](https://s3.amazonaws.com/cloud.kumu.io/accounts/137908/214666/d9ad8aa6-9d0e-4b9c-813b-ce5e89c9fd18.png)\n\n\n![WPTF_logo_blue](https://s3.amazonaws.com/cloud.kumu.io/accounts/137908/214666/4e23b954-d93c-4147-983f-de05326f3831.png)\n\nThe Wicked Problem Task Force is an interdisciplinary group at Journalism + Design at The New School in New York City. We use systems thinking and design to imagine worlds where people have access to the information they need to be self-governing.\n\nThis is the map of the current system we're existing in, taking into consideration everything from thirty years of toxic media policy, the rise of an economy based on harvesting attention, the collapse of local news.\n\nUsing the drop-down menu at the top, you can:\n* Use this **Full Map** view to zoom in and explore the myriad connections at play. By hovering over the different texts on the map (like, \"New Business Models\" or \"The Exploitation of Our Attention\" you can highlight the different underlying patterns driving the system.\n* Visit the** Neighborhood View** to explore the different sections of the map. By clicking on the buttons at the top of the screen, you can illuminate the various intersections we researched.\n* Click through the **Sample Leverage Pathways #1-3** to explore how this map can be used to showcase different opportunities for change in the system. These are hypothetical leverage points that demonstrate how directly targeting one force could have ripple effects across the system.",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-YxTJkc9B",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-0At6H4XX",
+          "position": {
+            "x": -184.39257895717896,
+            "y": -938.7622602440871
+          },
+          "pinned": true,
+          "style": {
+            "fontSize": 200,
+            "fontColor": "#ff0065"
+          },
+          "element": "elem-YqDe5B9M"
+        },
+        {
+          "_id": "node-2EuLbI74",
+          "position": {
+            "x": 130.52327117416513,
+            "y": -716.7995282491162
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-8MJrwoLi"
+        },
+        {
+          "_id": "node-3uNg15sh",
+          "position": {
+            "x": -20.998212090551874,
+            "y": 73.69720897437882
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QBCVWVMa"
+        },
+        {
+          "_id": "node-4NC5Oe6l",
+          "position": {
+            "x": -177.22133652363777,
+            "y": 644.8963793944179
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-2alzgvGK"
+        },
+        {
+          "_id": "node-5srOKAvX",
+          "position": {
+            "x": -736.4751185847441,
+            "y": 98.4830741204884
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-JEAd29qI"
+        },
+        {
+          "_id": "node-7Tey7Ytj",
+          "position": {
+            "x": 280.96783915824454,
+            "y": -504.9575598980129
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-rRr5oGSH"
+        },
+        {
+          "_id": "node-AJ6LHS28",
+          "position": {
+            "x": -128.26882439706387,
+            "y": 243.79301011327155
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-4RlywK06"
+        },
+        {
+          "_id": "node-BaVeeLYM",
+          "position": {
+            "x": 529.902922513519,
+            "y": -119.50878371989985
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-NEnGcuIw"
+        },
+        {
+          "_id": "node-DomhHNrP",
+          "position": {
+            "x": -601.0607106219366,
+            "y": -107.53080528128788
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-7xFeVnpv"
+        },
+        {
+          "_id": "node-KBSjsSA3",
+          "position": {
+            "x": -930.9428810555657,
+            "y": -42.10404485446141
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-2qm6anBt"
+        },
+        {
+          "_id": "node-KjALRG21",
+          "position": {
+            "x": -504.1081603244873,
+            "y": -689.4993459105265
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-rDjVx6Zt"
+        },
+        {
+          "_id": "node-LETmhQ5Q",
+          "position": {
+            "x": 363.7682869736135,
+            "y": 528.8316125731557
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-j7GdOicB"
+        },
+        {
+          "_id": "node-MITmCojK",
+          "position": {
+            "x": -356.8036054290959,
+            "y": -4.497659979816058
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-YdgOnTG8"
+        },
+        {
+          "_id": "node-Nrh2QtjW",
+          "position": {
+            "x": -620.6332511418804,
+            "y": 510.9438419532203
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-bbevspRj"
+        },
+        {
+          "_id": "node-P2BLoFrL",
+          "position": {
+            "x": -717.5428324240145,
+            "y": -375.43746243455746
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-uU01sLf5"
+        },
+        {
+          "_id": "node-Qs0NgK1p",
+          "position": {
+            "x": 30.707716418350312,
+            "y": 600.453184985048
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ItS6ZukR"
+        },
+        {
+          "_id": "node-RI9kiOrT",
+          "position": {
+            "x": -526.8848496842527,
+            "y": 258.7502855381433
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-kNR9nswf"
+        },
+        {
+          "_id": "node-RNDdIRxm",
+          "position": {
+            "x": 152.00171175750793,
+            "y": -294.5088568439916
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-OBFvzlTM"
+        },
+        {
+          "_id": "node-TZ12Urmc",
+          "position": {
+            "x": -36.94307754270552,
+            "y": -430.4757582361124
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-cNa0Hk19"
+        },
+        {
+          "_id": "node-TcbVwh4T",
+          "position": {
+            "x": -135.53926035778804,
+            "y": -220.9763688972239
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-0cGpFnVT"
+        },
+        {
+          "_id": "node-VIXurztr",
+          "position": {
+            "x": 490.3216197653829,
+            "y": 47.73540384531133
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-RJVPdOYY"
+        },
+        {
+          "_id": "node-WPqTh6mX",
+          "position": {
+            "x": 514.2500467628025,
+            "y": 302.61668383570844
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-qXDFVovK"
+        },
+        {
+          "_id": "node-YfrZbMwR",
+          "position": {
+            "x": -373.95486334693123,
+            "y": 350.23003858798444
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-VnUgSZqs"
+        },
+        {
+          "_id": "node-a68VYUqA",
+          "position": {
+            "x": 10.39404984563917,
+            "y": 321.0929415743961
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-hbQ30b0i"
+        },
+        {
+          "_id": "node-aRo9xUaR",
+          "position": {
+            "x": 1125.3208544825818,
+            "y": -499.67890423407573
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-kHN2eITX"
+        },
+        {
+          "_id": "node-bUKkeUCT",
+          "position": {
+            "x": -960.9723881165139,
+            "y": -283.8263764434927
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-QV7AS5xp"
+        },
+        {
+          "_id": "node-i1xOgRiV",
+          "position": {
+            "x": 253.19443618870372,
+            "y": 397.2650741835207
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-qXcgqxZS"
+        },
+        {
+          "_id": "node-jVKpUR65",
+          "position": {
+            "x": 108.55422048419085,
+            "y": 3.621812087586224
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-buh1glc5"
+        },
+        {
+          "_id": "node-l0x2htlI",
+          "position": {
+            "x": 282.22408136049813,
+            "y": 22.706302262435724
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-Iq50cxyf"
+        },
+        {
+          "_id": "node-lq2m7SrD",
+          "position": {
+            "x": 209.283998188139,
+            "y": 244.7287462849494
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-vOOzKmZP"
+        },
+        {
+          "_id": "node-m3rWW4eb",
+          "position": {
+            "x": -766.4555686219693,
+            "y": 546.6361594562557
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-hrkY0e91"
+        },
+        {
+          "_id": "node-my7EkAGQ",
+          "position": {
+            "x": 1115.650411421682,
+            "y": -729.1339686075847
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-KmPHeYXE"
+        },
+        {
+          "_id": "node-pHE25Ayt",
+          "position": {
+            "x": -424.22663855133464,
+            "y": -296.9393012319493
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-zHJhKqXA"
+        },
+        {
+          "_id": "node-py7Q6BJV",
+          "position": {
+            "x": 11.48971130567007,
+            "y": -637.7739279711227
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-rjHGSgph"
+        },
+        {
+          "_id": "node-rLYE4mrt",
+          "position": {
+            "x": -243.23191259059354,
+            "y": -466.8033512726352
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-8KiNUxuV"
+        },
+        {
+          "_id": "node-rmWddmom",
+          "position": {
+            "x": -552.381426712213,
+            "y": 123.34840153691506
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-oLpEUX31"
+        },
+        {
+          "_id": "node-s2JaCrgL",
+          "position": {
+            "x": -138.81048161396106,
+            "y": -19.043842908893907
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-lEUA0sA5"
+        },
+        {
+          "_id": "node-u9aZIgV0",
+          "position": {
+            "x": -110.31184090241965,
+            "y": 466.52735574470984
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-57WZQTo3"
+        },
+        {
+          "_id": "node-xFsERwU0",
+          "position": {
+            "x": -468.3710290840795,
+            "y": 721.6828569109947
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-X0oGQ4qf"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-1mw3JaDC",
+          "curvature": 0.30723863497535,
+          "style": {},
+          "connection": "conn-v7p3BRXS"
+        },
+        {
+          "_id": "edge-3hvjmZNm",
+          "curvature": 0.2119925273273592,
+          "style": {},
+          "connection": "conn-eygKZJA4"
+        },
+        {
+          "_id": "edge-42JNAh4H",
+          "curvature": 0.15696492334872336,
+          "style": {},
+          "connection": "conn-RoChPT7G"
+        },
+        {
+          "_id": "edge-6fH6IKV9",
+          "curvature": 0.15208004897972863,
+          "style": {},
+          "connection": "conn-XIINNnjb"
+        },
+        {
+          "_id": "edge-96o9SOVg",
+          "curvature": 0.2698360577496198,
+          "style": {},
+          "connection": "conn-48JD84Ra"
+        },
+        {
+          "_id": "edge-9ESANhGK",
+          "curvature": -0.37886780213056853,
+          "style": {},
+          "connection": "conn-aPiI2Z5W"
+        },
+        {
+          "_id": "edge-B1etlgdl",
+          "curvature": -0.5303406857104773,
+          "style": {},
+          "connection": "conn-1aSSs5z4"
+        },
+        {
+          "_id": "edge-BOSeBuv7",
+          "curvature": 0.1427295363208547,
+          "style": {},
+          "connection": "conn-ZqI1SY6p"
+        },
+        {
+          "_id": "edge-BpoOyI3g",
+          "curvature": 0.2201357243443506,
+          "style": {},
+          "connection": "conn-EysvZeo9"
+        },
+        {
+          "_id": "edge-CMau5uNR",
+          "curvature": 0.20989330000671755,
+          "style": {},
+          "connection": "conn-EKG2SUZs"
+        },
+        {
+          "_id": "edge-CaHOhhEZ",
+          "curvature": 0.20343657489481476,
+          "style": {},
+          "connection": "conn-QszNDP7B"
+        },
+        {
+          "_id": "edge-EunpgDDH",
+          "style": {},
+          "connection": "conn-jsiotosi"
+        },
+        {
+          "_id": "edge-GZQBCzwx",
+          "curvature": 0.2353998385362964,
+          "style": {},
+          "connection": "conn-x1pZEJof"
+        },
+        {
+          "_id": "edge-HmqixtK5",
+          "style": {},
+          "connection": "conn-hnD10ljR"
+        },
+        {
+          "_id": "edge-I5YiBwSl",
+          "curvature": 0.2100293360704966,
+          "style": {},
+          "connection": "conn-ViPfJPq7"
+        },
+        {
+          "_id": "edge-IDMYzVFQ",
+          "curvature": -0.4483950794384677,
+          "style": {},
+          "connection": "conn-0l3l6eLj"
+        },
+        {
+          "_id": "edge-JM8tvgzj",
+          "curvature": 0.20827854287528985,
+          "style": {},
+          "connection": "conn-wB7vt3yH"
+        },
+        {
+          "_id": "edge-JWaKqDF2",
+          "curvature": 0.12099420808448161,
+          "style": {},
+          "connection": "conn-HUszmYtx"
+        },
+        {
+          "_id": "edge-Jpiopz5m",
+          "curvature": -0.18373428220453766,
+          "style": {},
+          "connection": "conn-EXh9ZSLe"
+        },
+        {
+          "_id": "edge-Ll9Dm2zY",
+          "curvature": -0.17087542946826348,
+          "style": {},
+          "connection": "conn-vlnc7xje"
+        },
+        {
+          "_id": "edge-M4wh7DC3",
+          "curvature": 0.14244661901252004,
+          "style": {},
+          "connection": "conn-R0ZLy2bU"
+        },
+        {
+          "_id": "edge-NQh105Do",
+          "curvature": -0.2080325656984433,
+          "style": {},
+          "connection": "conn-8alAR4hS"
+        },
+        {
+          "_id": "edge-NjGpfMeW",
+          "curvature": -0.33876873011863523,
+          "style": {},
+          "connection": "conn-Qsh0uS2u"
+        },
+        {
+          "_id": "edge-O1o6DyZW",
+          "curvature": -0.6856424684294935,
+          "style": {},
+          "connection": "conn-Xk56zwug"
+        },
+        {
+          "_id": "edge-OUl9EwQu",
+          "style": {},
+          "connection": "conn-nTzbvXcH"
+        },
+        {
+          "_id": "edge-S846WmrW",
+          "curvature": 0.30049059783364857,
+          "style": {},
+          "connection": "conn-FpTF9gFh"
+        },
+        {
+          "_id": "edge-SXDGenkM",
+          "curvature": 0.28375526945962043,
+          "style": {},
+          "connection": "conn-9CzbF9Qk"
+        },
+        {
+          "_id": "edge-SnOjzOej",
+          "curvature": 0.38617021642486177,
+          "style": {},
+          "connection": "conn-JBXzszND"
+        },
+        {
+          "_id": "edge-TkU2Sth7",
+          "style": {},
+          "connection": "conn-Jt1cYHUy"
+        },
+        {
+          "_id": "edge-VkJUaRn6",
+          "curvature": 0.36896964208020183,
+          "style": {},
+          "connection": "conn-kOBFl4gC"
+        },
+        {
+          "_id": "edge-W0Pz5gw3",
+          "curvature": 0.1196631814764739,
+          "style": {},
+          "connection": "conn-5o7kxJ1e"
+        },
+        {
+          "_id": "edge-WOrO3xE6",
+          "curvature": -0.9861564640860564,
+          "style": {},
+          "connection": "conn-PD9ENalR"
+        },
+        {
+          "_id": "edge-WjBKQW6X",
+          "curvature": 0.2984808825076166,
+          "style": {},
+          "connection": "conn-2KP0yKI5"
+        },
+        {
+          "_id": "edge-XH0WE83b",
+          "curvature": -0.15493412279256688,
+          "style": {},
+          "connection": "conn-yXXn2ov2"
+        },
+        {
+          "_id": "edge-XrGEZCQR",
+          "curvature": 0.13938818068190698,
+          "style": {},
+          "connection": "conn-otBVNhwT"
+        },
+        {
+          "_id": "edge-XvtfWMNI",
+          "curvature": -0.1534573290910286,
+          "style": {},
+          "connection": "conn-G8Pox94i"
+        },
+        {
+          "_id": "edge-YRPGuhtG",
+          "curvature": 0.20458912311895994,
+          "style": {},
+          "connection": "conn-hRTRv5nN"
+        },
+        {
+          "_id": "edge-YaE3mIjf",
+          "curvature": 0.18442980055004843,
+          "style": {},
+          "connection": "conn-bqY2OqPA"
+        },
+        {
+          "_id": "edge-YsrtacL7",
+          "style": {},
+          "connection": "conn-BXJBtE74"
+        },
+        {
+          "_id": "edge-Z9kv57sW",
+          "curvature": 0.5801795466851524,
+          "style": {},
+          "connection": "conn-z93cSVXc"
+        },
+        {
+          "_id": "edge-ZlQn2cFr",
+          "curvature": -0.11614047250939022,
+          "style": {},
+          "connection": "conn-TBu6gdH1"
+        },
+        {
+          "_id": "edge-a37LrT78",
+          "curvature": -0.33594503906377643,
+          "style": {},
+          "connection": "conn-6bbjyW44"
+        },
+        {
+          "_id": "edge-a7zpA4KF",
+          "curvature": -0.15809620891296247,
+          "style": {},
+          "connection": "conn-6jG1XomX"
+        },
+        {
+          "_id": "edge-aiew7uqY",
+          "curvature": -0.3008013419691215,
+          "style": {},
+          "connection": "conn-VYVxD24W"
+        },
+        {
+          "_id": "edge-cJUx3i2C",
+          "curvature": 0.16747972253104493,
+          "style": {},
+          "connection": "conn-ewlw3MlC"
+        },
+        {
+          "_id": "edge-dWpxXkiF",
+          "curvature": 0.16409526914359432,
+          "style": {},
+          "connection": "conn-0OWxchIC"
+        },
+        {
+          "_id": "edge-dshmhYdc",
+          "curvature": 0.1691581888457583,
+          "style": {},
+          "connection": "conn-4XZvTCSi"
+        },
+        {
+          "_id": "edge-eI20UYNy",
+          "curvature": -0.21838800990818338,
+          "style": {},
+          "connection": "conn-THUdaNmq"
+        },
+        {
+          "_id": "edge-eoGZTGwA",
+          "curvature": -0.19778600050219358,
+          "style": {},
+          "connection": "conn-Y46vPZC3"
+        },
+        {
+          "_id": "edge-erQRi47V",
+          "curvature": 0.3452294247065306,
+          "style": {},
+          "connection": "conn-MhKsQhL9"
+        },
+        {
+          "_id": "edge-fpCbMAXE",
+          "curvature": -0.1539942780149838,
+          "style": {},
+          "connection": "conn-zZOFOLUP"
+        },
+        {
+          "_id": "edge-gTZDXFZ1",
+          "curvature": 0.30556250999192547,
+          "style": {},
+          "connection": "conn-IczxcHp3"
+        },
+        {
+          "_id": "edge-gp782AIK",
+          "curvature": 0.14186744369273158,
+          "style": {},
+          "connection": "conn-2rPJNy1X"
+        },
+        {
+          "_id": "edge-hZl25uxK",
+          "curvature": 0.30058385620125855,
+          "style": {},
+          "connection": "conn-FBWGR1KX"
+        },
+        {
+          "_id": "edge-jOOiXGLN",
+          "curvature": -0.18680998041095348,
+          "style": {},
+          "connection": "conn-IRa73XNP"
+        },
+        {
+          "_id": "edge-k1nppbBz",
+          "curvature": -0.15840118297681735,
+          "style": {},
+          "connection": "conn-c3Y7RdpK"
+        },
+        {
+          "_id": "edge-kAqWKwGR",
+          "curvature": 0.18009622909592193,
+          "style": {},
+          "connection": "conn-2978OW3p"
+        },
+        {
+          "_id": "edge-lUPRfbRA",
+          "style": {},
+          "connection": "conn-sxZgA7Rc"
+        },
+        {
+          "_id": "edge-lbb5CJKq",
+          "curvature": -0.1300991950190606,
+          "style": {},
+          "connection": "conn-W0aF6liN"
+        },
+        {
+          "_id": "edge-p7AnFRAl",
+          "curvature": -0.8722659258239924,
+          "style": {},
+          "connection": "conn-Urtll2jH"
+        },
+        {
+          "_id": "edge-pDTcJoDG",
+          "curvature": -1.135570685799903,
+          "style": {},
+          "connection": "conn-IUWVJLb7"
+        },
+        {
+          "_id": "edge-sbUU7qGM",
+          "style": {},
+          "connection": "conn-3OHgxcv7"
+        },
+        {
+          "_id": "edge-ucmuIGp9",
+          "curvature": -0.14578772129988257,
+          "style": {},
+          "connection": "conn-vYroNGRh"
+        },
+        {
+          "_id": "edge-ueMeiGCb",
+          "style": {},
+          "connection": "conn-TOTEnZVP"
+        },
+        {
+          "_id": "edge-vJnbWTBu",
+          "curvature": 0.161547579300334,
+          "style": {},
+          "connection": "conn-VVMU9VH9"
+        },
+        {
+          "_id": "edge-vmsFtO7i",
+          "curvature": -0.17884055866406476,
+          "style": {},
+          "connection": "conn-ES00x7n6"
+        },
+        {
+          "_id": "edge-w4ASB5oS",
+          "curvature": 0.1023265696443164,
+          "style": {},
+          "connection": "conn-t8P63HLV"
+        },
+        {
+          "_id": "edge-x8gAZzik",
+          "curvature": -0.22507049502523818,
+          "style": {},
+          "connection": "conn-WDOlQCq6"
+        },
+        {
+          "_id": "edge-xLM6PczR",
+          "curvature": 0.2511133737286454,
+          "style": {},
+          "connection": "conn-xHcfA5uR"
+        },
+        {
+          "_id": "edge-xUg2eoBn",
+          "curvature": -0.2634229164035652,
+          "style": {},
+          "connection": "conn-RQPYZopc"
+        },
+        {
+          "_id": "edge-yPVVAyHM",
+          "curvature": -0.3755107006665293,
+          "style": {},
+          "connection": "conn-JrmLCsYE"
+        },
+        {
+          "_id": "edge-ynpbmNvG",
+          "curvature": 0.18429479835056958,
+          "style": {},
+          "connection": "conn-BRBTRUFg"
+        },
+        {
+          "_id": "edge-zDdEJnrp",
+          "curvature": -0.16102190930217758,
+          "style": {},
+          "connection": "conn-1C2y3mzt"
+        },
+        {
+          "_id": "edge-zwqQnrEm",
+          "curvature": -0.7496169212511051,
+          "style": {},
+          "connection": "conn-QIxiHanj"
+        }
+      ],
+      "loops": [
+        {
+          "_id": "labl-06BGR6Ha",
+          "position": {
+            "x": 2.282318993220501,
+            "y": -325.21499978772994
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-1NegubsH"
+        },
+        {
+          "_id": "labl-6DP4AI4f",
+          "position": {
+            "x": -448.3200420710223,
+            "y": -488.56420681477243
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-IAasgqtA"
+        },
+        {
+          "_id": "labl-DBn6gKuX",
+          "position": {
+            "x": -615.2036344905123,
+            "y": 182.0497394251029
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-fXUxD7P6"
+        },
+        {
+          "_id": "labl-QuIe9OvT",
+          "position": {
+            "x": -725.9775401991923,
+            "y": 424.249088345062
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-2OfbEaQd"
+        },
+        {
+          "_id": "labl-V2m1eJv6",
+          "position": {
+            "x": -562.1725735816146,
+            "y": -14.73966844273264
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-5PVPwaXc"
+        },
+        {
+          "_id": "labl-bkFavia8",
+          "position": {
+            "x": 415.1511540032214,
+            "y": 356.99204468877997
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-zdhxtRYZ"
+        },
+        {
+          "_id": "labl-hJCEfeMV",
+          "position": {
+            "x": 192.64546572381357,
+            "y": 102.81568964671924
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-EB5zmfkD"
+        },
+        {
+          "_id": "labl-tCFM3O22",
+          "position": {
+            "x": -259.8248057212852,
+            "y": -332.4325740766192
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-s4Jp8ye9"
+        },
+        {
+          "_id": "labl-uqeF4ydz",
+          "position": {
+            "x": -97.61550938303198,
+            "y": 361.82490255413717
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 25
+          },
+          "loop": "loop-hHCUWb6k"
+        },
+        {
+          "_id": "labl-yMfcdU46",
+          "position": {
+            "x": -140.75832351811823,
+            "y": 70.77916655266685
+          },
+          "pinned": true,
+          "style": {
+            "fontWeight": "bold",
+            "fontSize": 30
+          },
+          "loop": "loop-XHjlytLh"
+        }
+      ]
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-2ifK9i2o",
+      "name": "Full Map",
+      "style": "@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 60;\n  color: #143CFF;\n  text-align: center;\n  font-color: #143CFF;\n  font-weight: bold;\n}\n\nconnection {\n  width: 4;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\n/* Core Story */\nelement[\"element type\"=\"Core Story\"] {\n  size: 80;\n  color: #ff0064;\n  font-color: #fff;\n  font-weight: bold;\n  font-size: 30;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  size: 100;\n  color: #fff;\n  font-weight: bold;\n  font-size: 30;\n  font-color: #000;\n}\n\n/* elements: Authoritarianism/Populism */\n[\"Element Type\"=\"Authoritarianism/Populism\"] {\n  color: #373737;\n  font-color: #ffffff;\n}\n\n/* elements: Democracy */\n[\"Element Type\"=\"Democracy\"] {\n  color: #143cff;\n  font-color: #fff;\n}\n\n/* elements: Information Confusion */\n[\"Element Type\"=\"Information Confusion\"] {\n  color: #50f5c8;\n  font-color: #000;\n}\n\n/* elements: Journalism */\n[\"Element Type\"=\"Journalism\"] {\n  color: #dcf500;\n  font-color: #000;\n}\n\n/* elements: Media Growth */\n[\"Element Type\"=\"Media Growth\"] {\n  color: #e1e1e1;\n  font-color: #000;\n}\n\nelement#elem-0cGpFnVT, element#elem-Dhas7WTa {\n  border-width: 8;\n  border-color: #143cff;\n}\n\nelement#elem-buh1glc5 {\n  border-width: 8;\n  border-color: #373737;\n}\n\nelement#elem-4RlywK06 {\n  border-width: 8;\n  border-color: #50f5c8;\n}\n\nelement#elem-YdgOnTG8 {\n  border-width: 8;\n  border-color: #DCF500;\n}\n\nelement#elem-anf1QCJN {\n  color: #ffffff;\n  font-color: #000000;\n  font-weight: bold;\n  font-size: 40;\n}\n\nelement#elem-VP8E6rZk {\n  color: #fff;\n  font-color: #000;\n  font-weight: bold;\n  font-size: 40;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\nelement#elem-X0oGQ4qf {\n  shadow-color: #50F5C8;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-8KiNUxuV {\n  color: #e1e1e1;\n  font-color: #000000;\n  shadow-color: #143cff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-NEnGcuIw {\n  color: #e1e1e1;\n  font-color: #000000;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-YqDe5B9M {\n  color: #ffffff;\n  size: 100;\n  font-color: #ff0064;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  size: 50;\n  font-color: #000000;\n  font-size: 75;\n}\n\nelement#elem-vOOzKmZP {\n  shadow-color: #50F5C8;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-YQBKEkOk, element#elem-xVrom2EA, element#elem-pXSUoI2q, element#elem-9htgPjrK, element#elem-GRWNAfeq, element#elem-EVARgAm1, element#elem-4rTrcxOl, element#elem-MTmsqB57, element#elem-Upz0j3Hj {\n  color: #ffffff;\n  font-color: #000000;\n  font-weight: bold;\n  font-size: 30;\n  size: 10;\n}\n\nconnection#conn-Jlw3YDl6 {\n  size: 5;\n}\n\nelement#elem-QV7AS5xp, element#elem-uU01sLf5, element#elem-2qm6anBt {\n  shadow-color: #DCF500;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nconnection#conn-Xk56zwug {\n  color: #ffffff;\n}\n\nconnection#conn-jsiotosi {\n  color: #ffffff;\n}\n\nconnection#conn-hTbzZjSf {\n  color: #ffffff;\n}\n\nconnection#conn-vYroNGRh {\n  color: #ffffff;\n}\n\nconnection#conn-QIxiHanj {\n  color: #ffffff;\n}\n\nelement#elem-YqDe5B9M {\n  size: 5;\n  font-size: 80;\n  font-color: #000;\n}\n\n"
+    },
+    {
+      "_id": "pers-t34zl11c",
+      "name": "Neighborhood View",
+      "style": "@controls {\n  top-left {\n    showcase {\n      option {\n        label: \"Core Story\";\n        selector: [\"Tags\"=\"Core Story\"];\n      }\n\n      option {\n        label: \"Attention Economy\";\n        selector: [\"Tags\"=\"Attention Economy\"];\n      }\n\n      option {\n        label: \"Media Growth\";\n        selector: [\"Tags\"=\"Media Growth\"];\n      }\n\n      option {\n        label: \"Journalism\";\n        selector: [\"Tags\"=\"Journalism\"];\n      }\n\n      option {\n        label: \"Democracy\";\n        selector: [\"Tags\"=\"Democracy\"];\n      }\n\n      option {\n        label: \"Authoritarianism\";\n        selector: [\"Tags\"=\"Authoritarianism/Populism\"];\n      }\n    }\n  }\n}\n\n@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 60;\n  color: #dedede;\n  text-align: center;\n  font-color: #000000;\n  font-size: 20;\n  font-weight: bold;\n}\n\nconnection {\n  width: 2;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\n/* Core Story */\nelement[\"element type\"=\"Core Story\"] {\n  size: 80;\n  color: #ff0064;\n  font-color: #fff;\n  font-weight: bold;\n  font-size: 30;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  size: 100;\n  color: #fff;\n  font-weight: bold;\n  font-size: 30;\n  font-color: #000;\n}\n\n/* elements: Authoritarianism/Populism */\n[\"Element Type\"=\"Authoritarianism/Populism\"] {\n  color: #373737;\n  font-color: #ffffff;\n}\n\n/* elements: Democracy */\n[\"Element Type\"=\"Democracy\"] {\n  color: #143cff;\n  font-color: #fff;\n}\n\n/* elements: Information Confusion */\n[\"Element Type\"=\"Information Confusion\"] {\n  color: #50f5c8;\n  font-color: #000;\n}\n\n/* elements: Journalism */\n[\"Element Type\"=\"Journalism\"] {\n  color: #dcf500;\n  font-color: #000;\n}\n\n/* elements: Media Growth */\n[\"Element Type\"=\"Media Growth\"] {\n  color: #e1e1e1;\n  font-color: #000;\n}\n\nelement#elem-0cGpFnVT, element#elem-Dhas7WTa {\n  border-width: 8;\n  border-color: #143cff;\n}\n\nelement#elem-buh1glc5 {\n  border-width: 8;\n  border-color: #373737;\n}\n\nelement#elem-4RlywK06 {\n  border-width: 8;\n  border-color: #50f5c8;\n}\n\nelement#elem-YdgOnTG8 {\n  border-width: 8;\n  border-color: #DCF500;\n}\n\nelement#elem-anf1QCJN {\n  color: #ffffff;\n  font-color: #000000;\n  font-weight: bold;\n  font-size: 40;\n}\n\nelement#elem-VP8E6rZk {\n  color: #fff;\n  font-color: #000;\n  font-weight: bold;\n  font-size: 40;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\nelement#elem-X0oGQ4qf {\n  shadow-color: #50F5C8;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-8KiNUxuV {\n  color: #e1e1e1;\n  font-color: #000000;\n  shadow-color: #143cff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-NEnGcuIw {\n  color: #e1e1e1;\n  font-color: #000000;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-YqDe5B9M {\n  color: #ffffff;\n  size: 100;\n  font-color: #ff0064;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  size: 50;\n  font-color: #000000;\n  font-size: 75;\n}\n\nelement#elem-vOOzKmZP {\n  shadow-color: #50F5C8;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nelement#elem-YQBKEkOk, element#elem-xVrom2EA, element#elem-pXSUoI2q, element#elem-9htgPjrK, element#elem-GRWNAfeq, element#elem-EVARgAm1, element#elem-4rTrcxOl, element#elem-MTmsqB57 {\n  color: #ffffff;\n  font-color: #000000;\n  font-weight: bold;\n  font-size: 30;\n}\n\nconnection#conn-Jlw3YDl6 {\n  size: 5;\n}\n\nelement#elem-QV7AS5xp, element#elem-uU01sLf5, element#elem-2qm6anBt {\n  shadow-color: #DCF500;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\nconnection#conn-Xk56zwug {\n  color: #ffffff;\n}\n\nconnection#conn-jsiotosi {\n  color: #ffffff;\n}\n\nconnection#conn-hTbzZjSf {\n  color: #ffffff;\n}\n\nconnection#conn-vYroNGRh {\n  color: #ffffff;\n}\n\nconnection#conn-QIxiHanj {\n  color: #ffffff;\n}\n\n"
+    },
+    {
+      "_id": "pers-AE16xQGs",
+      "name": "Sample Leverage Pathway #1",
+      "style": "@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 49;\n  color: #dedede;\n  text-align: center;\n  font-color: #000000;\n}\n\nconnection {\n  width: 2;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nelement[\"element type\"=\"Core Story\"] {\n  size: 57;\n  color: #dedede;\n  font-color: #000;\n  font-weight: bold;\n  border-color: #000;\n  border-width: 5;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\n/* Direct Intervention */\nelement[\"tags\"=\"Hypothesis #1\"][\"intervention type\"=\"Direct\"] {\n  color: #ff0064;\n  font-color: #fff;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Intervention */\nelement[\"tags\"=\"Hypothesis #1\"][\"intervention type\"=\"Indirect\"] {\n  color: #ff0064;\n  font-color: #fff;\n  shadow-color: #d4f1ff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Impact */\nconnection[\"connection\"=\"Indirect Impact\"][\"tags\"=\"Hypothesis #1\"] {\n  size: 10;\n  color: #ff0064;\n  style: dashed;\n}\n\n/* Direct Impact */\nconnection[\"connection\"=\"Direct Impact\"][\"tags\"=\"Hypothesis #1\"] {\n  size: 10;\n  color: #ff0064;\n  style: solid;\n}\n\nelement#elem-YqDe5B9M {\n  size: 33;\n  color: #ffffff;\n  font-color: #143cff;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}\n\nconnection#conn-QIxiHanj {\n  color: #ffffff;\n}\n\nelement#elem-YqDe5B9M, element#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}"
+    },
+    {
+      "_id": "pers-RAAN6ZIQ",
+      "name": "Sample Leverage Pathway #2",
+      "style": "@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 49;\n  color: #dedede;\n  text-align: center;\n  font-color: #000000;\n}\n\nconnection {\n  width: 2;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nelement[\"element type\"=\"Core Story\"] {\n  size: 57;\n  color: #dedede;\n  font-color: #000;\n  font-weight: bold;\n  border-color: #000;\n  border-width: 5;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\n/* Direct Intervention */\nelement[\"tags\"=\"Hypothesis #2\"][\"intervention type\"=\"Direct\"] {\n  color: #143cff;\n  font-color: #fff;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Intervention */\nelement[\"tags\"=\"Hypothesis #2\"][\"intervention type\"=\"Indirect\"] {\n  color: #143cff;\n  font-color: #fff;\n  shadow-color: #d4f1ff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Impact */\nconnection[\"connection\"=\"Indirect Impact\"][\"tags\"=\"Hypothesis #2\"] {\n  size: 10;\n  color: #143cff;\n  style: dashed;\n}\n\n/* Direct Impact */\nconnection[\"connection\"=\"Direct Impact\"][\"tags\"=\"Hypothesis #2\"] {\n  size: 10;\n  color: #143cff;\n  style: solid;\n}\n\nelement#elem-YqDe5B9M {\n  size: 33;\n  color: #ffffff;\n  font-color: #143cff;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}\n\nconnection#conn-vYroNGRh {\n  color: #ffffff;\n}\n\nelement#elem-YqDe5B9M, element#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}\n\nconnection#conn-QIxiHanj {\n  color: #ffffff;\n}"
+    },
+    {
+      "_id": "pers-rKHVt8L5",
+      "name": "Sample Leverage Pathway #3",
+      "style": "@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 49;\n  color: #dedede;\n  text-align: center;\n  font-color: #000000;\n}\n\nconnection {\n  width: 2;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nelement[\"element type\"=\"Core Story\"] {\n  size: 57;\n  color: #dedede;\n  font-color: #000;\n  font-weight: bold;\n  border-color: #000;\n  border-width: 5;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\n/* Direct Intervention */\nelement[\"tags\"=\"Hypothesis #3\"][\"intervention type\"=\"Direct\"] {\n  color: #dcf500;\n  font-color: #000;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Intervention */\nelement[\"tags\"=\"Hypothesis #3\"][\"intervention type\"=\"Indirect\"] {\n  color: #dcf500;\n  font-color: #000;\n  shadow-color: #d4f1ff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Impact */\nconnection[\"connection\"=\"Indirect Impact\"][\"tags\"=\"Hypothesis #3\"] {\n  size: 10;\n  color: #dcf500;\n  style: dashed;\n}\n\n/* Direct Impact */\nconnection[\"connection\"=\"Direct Impact\"][\"tags\"=\"Hypothesis #3\"] {\n  size: 10;\n  color: #dcf500;\n  style: solid;\n}\n\nelement#elem-YqDe5B9M {\n  size: 33;\n  color: #ffffff;\n  font-color: #143cff;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}\n\nconnection#conn-QIxiHanj {\n  color: #ffffff;\n}\n\nelement#elem-YqDe5B9M, element#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}"
+    },
+    {
+      "_id": "pers-0iPBy22X",
+      "name": "Sample Leverage Pathway #4",
+      "style": "@settings {\n  template: custom;\n  background-color: #fff;\n}\n\nelement {\n  size: 49;\n  color: #dedede;\n  text-align: center;\n  font-color: #000000;\n}\n\nconnection {\n  width: 2;\n  color: #000;\n  style: solid;\n}\n\nconnection#conn-nTzbvXcH, connection#conn-9CzbF9Qk, connection#conn-MhKsQhL9, connection#conn-sxZgA7Rc, connection#conn-gqa5KE4o, connection#conn-TpqaIOg1 {\n  size: 5;\n}\n\nconnection#conn-wB7vt3yH {\n  color: #ff0064;\n  style: dashed;\n}\n\nelement[\"element type\"=\"Core Story\"] {\n  size: 57;\n  color: #dedede;\n  font-color: #000;\n  font-weight: bold;\n  border-color: #000;\n  border-width: 5;\n}\n\n/* Unsustainable Connection */\nconnection[\"tags\"=\"Unsustainable\"] {\n  color: #dc131e;\n  style: dashed;\n}\n\n/* Direct Intervention */\nelement[\"tags\"=\"Hypothesis #4\"][\"intervention type #2\"=\"Direct\"] {\n  color: #50f5c8;\n  font-color: #000;\n  shadow-color: #373737;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Intervention */\nelement[\"tags\"=\"Hypothesis #4\"][\"intervention type #2\"=\"Indirect\"] {\n  color: #50f5c8;\n  font-color: #000;\n  shadow-color: #d4f1ff;\n  shadow-opacity: 1;\n  shadow-size: 1;\n  margin: 10;\n}\n\n/* Indirect Impact */\nconnection[\"connection\"=\"Indirect Impact\"][\"tags\"=\"Hypothesis #4\"] {\n  size: 10;\n  color: #50f5c8;\n  style: dashed;\n}\n\n/* Direct Impact */\nconnection[\"connection\"=\"Direct Impact\"][\"tags\"=\"Hypothesis #4\"] {\n  size: 10;\n  color: #50f5c8;\n  style: solid;\n}\n\nelement#elem-YqDe5B9M {\n  size: 33;\n  color: #ffffff;\n  font-color: #143cff;\n  font-size: 200;\n  font-weight: bold;\n}\n\nelement#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}\n\nelement#elem-YqDe5B9M, element#elem-KmPHeYXE, element#elem-kHN2eITX {\n  color: #ffffff;\n  font-color: #fff;\n}"
+    }
+  ]
+}
