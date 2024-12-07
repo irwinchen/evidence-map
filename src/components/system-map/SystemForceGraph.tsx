@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { KumuData, KumuElement, KumuConnection } from 'components/system-map/types';
+import { PathCalculator } from '../../utils/PathCalculator';
 
 interface SystemForceGraphProps {
   data: KumuData;
@@ -21,6 +22,7 @@ interface SimulationLink extends d3.SimulationLinkDatum<SimulationNode> {
   connectionType?: string;
   source: SimulationNode;
   target: SimulationNode;
+  curvature?: number;
 }
 
 // Edge router helper class for calculating edge paths
@@ -54,8 +56,14 @@ class EdgeRouter {
     const endX = target.x - targetRadius * Math.cos(angle);
     const endY = target.y - targetRadius * Math.sin(angle);
 
-    // Create a straight line path
-    return `M${startX},${startY}L${endX},${endY}`;
+    // Generate curved path using PathCalculator
+    const pathData = PathCalculator.generateCurvedPath(
+      { x: startX, y: startY },
+      { x: endX, y: endY },
+      15 // Default curvature value
+    );
+
+    return pathData.path;
   }
 }
 
@@ -92,6 +100,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
       source: nodes.find((n) => n.id === conn.from)!,
       target: nodes.find((n) => n.id === conn.to)!,
       connectionType: conn.attributes?.['connection type'],
+      curvature: 15,
     }));
 
     // Create SVG container with zoom

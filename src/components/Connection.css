@@ -1,0 +1,32 @@
+.connection {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.connection:hover .connection-path {
+  stroke: #007AFF;
+  stroke-width: 3;
+}
+
+.connection.selected .connection-path {
+  stroke: #007AFF;
+  stroke-width: 3;
+}
+
+.connection-label {
+  pointer-events: none;
+  user-select: none;
+}
+
+.connection-label rect {
+  opacity: 0.9;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover circle {
+  stroke: #007AFF;
+  stroke-width: 3;
+}
