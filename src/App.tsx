@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import AboutPage from './pages/AboutPage';
-import MapPage from './pages/MapPage';
+import SystemMapPage from './pages/SystemMapPage';
 import ContributorsPage from './pages/ContributorsPage';
 import SubmitPage from './pages/SubmitPage';
 import ContactPage from './pages/ContactPage';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-100">
@@ -26,10 +26,10 @@ function App() {
                   About
                 </Link>
                 <Link
-                  to="/map"
+                  to="/system-map"
                   className="inline-flex items-center px-1 pt-1 text-gray-700 hover:text-gray-900"
                 >
-                  Map
+                  System Map
                 </Link>
                 <Link
                   to="/contributors"
@@ -66,7 +66,7 @@ function App() {
         <main className="container mx-auto px-4">
           <Routes>
             <Route path="/" element={<AboutPage />} />
-            <Route path="/map" element={<MapPage />} />
+            <Route path="/system-map" element={<SystemMapPage />} />
             <Route path="/contributors" element={<ContributorsPage />} />
             <Route path="/submit" element={<SubmitPage />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -76,5 +76,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

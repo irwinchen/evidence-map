@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { KumuData, KumuElement, KumuConnection } from 'components/system-map/types';
 
-interface ForceGraphProps {
+interface SystemForceGraphProps {
   data: KumuData;
   width: number;
   height: number;
@@ -14,17 +14,59 @@ interface SimulationNode extends d3.SimulationNodeDatum {
   elementType?: string;
   x?: number;
   y?: number;
+  radius: number;
 }
 
 interface SimulationLink extends d3.SimulationLinkDatum<SimulationNode> {
   connectionType?: string;
+  source: SimulationNode;
+  target: SimulationNode;
 }
 
-const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
+// Edge router helper class for calculating edge paths
+class EdgeRouter {
+  constructor() {
+    // No parameters needed in constructor
+  }
+
+  getPath(source: SimulationNode, target: SimulationNode): string {
+    // Ensure source and target have positions
+    if (
+      typeof source.x !== 'number' ||
+      typeof source.y !== 'number' ||
+      typeof target.x !== 'number' ||
+      typeof target.y !== 'number'
+    ) {
+      return '';
+    }
+
+    // Calculate the angle between nodes
+    const dx = target.x - source.x;
+    const dy = target.y - source.y;
+    const angle = Math.atan2(dy, dx);
+
+    // Adjust start and end points to account for node radii
+    const sourceRadius = source.radius || 10;
+    const targetRadius = target.radius || 10;
+
+    const startX = source.x + sourceRadius * Math.cos(angle);
+    const startY = source.y + sourceRadius * Math.sin(angle);
+    const endX = target.x - targetRadius * Math.cos(angle);
+    const endY = target.y - targetRadius * Math.sin(angle);
+
+    // Create a straight line path
+    return `M${startX},${startY}L${endX},${endY}`;
+  }
+}
+
+const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height }) => {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     if (!svgRef.current || !data) return;
+
+    // Clear existing content
+    d3.select(svgRef.current).selectAll('*').remove();
 
     // Get set of node IDs that have connections
     const connectedNodeIds = new Set<string>();
@@ -38,38 +80,36 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
       connectedNodeIds.has(elem._id)
     );
 
-    // Transform data for D3
+    // Transform data for D3 with guaranteed radius
     const nodes: SimulationNode[] = connectedElements.map((elem: KumuElement) => ({
       id: elem._id,
       label: elem.attributes.label || '',
       elementType: elem.attributes['element type'],
+      radius: elem.attributes['element type'] === 'Core Story' ? 15 : 10,
     }));
 
     const links: SimulationLink[] = data.connections.map((conn: KumuConnection) => ({
-      source: conn.from,
-      target: conn.to,
+      source: nodes.find((n) => n.id === conn.from)!,
+      target: nodes.find((n) => n.id === conn.to)!,
       connectionType: conn.attributes?.['connection type'],
     }));
 
-    // Clear any existing SVG content
-    d3.select(svgRef.current).selectAll('*').remove();
-
-    // Create the SVG container with zoom support
+    // Create SVG container with zoom
     const svg = d3
       .select(svgRef.current)
       .attr('width', width)
       .attr('height', height)
       .attr('viewBox', [0, 0, width, height]);
 
-    // Define arrow markers
+    // Define arrow markers with proper positioning
     svg
       .append('defs')
       .selectAll('marker')
-      .data(['end'])
+      .data(['end-marker'])
       .join('marker')
       .attr('id', 'arrow')
       .attr('viewBox', '0 -5 10 10')
-      .attr('refX', 20)
+      .attr('refX', (d) => 28) // Adjusted to account for node radius
       .attr('refY', 0)
       .attr('markerWidth', 6)
       .attr('markerHeight', 6)
@@ -88,7 +128,10 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
       });
     svg.call(zoom);
 
-    // Create the simulation with adjusted parameters
+    // Initialize edge router
+    const edgeRouter = new EdgeRouter();
+
+    // Create the simulation but don't start it yet
     const simulation = d3
       .forceSimulation<SimulationNode>(nodes)
       .force(
@@ -100,28 +143,33 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
       )
       .force('charge', d3.forceManyBody().strength(-300).distanceMax(350))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(40));
+      .force('collision', d3.forceCollide().radius(40))
+      .stop(); // Stop the simulation initially
 
-    // Create the links using curved paths
-    const link = g
-      .append('g')
+    // Create container for links
+    const linkGroup = g.append('g').attr('class', 'links');
+
+    // Create container for nodes
+    const nodeGroup = g.append('g').attr('class', 'nodes');
+
+    // Create links with smart routing
+    const link = linkGroup
       .selectAll('path')
       .data(links)
       .join('path')
       .attr('stroke', '#999')
       .attr('stroke-opacity', 0.4)
-      .attr('stroke-width', (d: SimulationLink) => (d.connectionType === '++' ? 2 : 1))
+      .attr('stroke-width', (d) => (d.connectionType === '++' ? 2 : 1))
       .attr('fill', 'none')
       .attr('marker-end', 'url(#arrow)')
-      .style('transition', 'all 0.3s ease');
+      .style('transition', 'opacity 0.3s ease');
 
-    // Create the nodes group
-    const node = g
-      .append('g')
+    // Create nodes
+    const node = nodeGroup
       .selectAll('g')
       .data(nodes)
       .join('g')
-      .style('transition', 'all 0.3s ease')
+      .attr('class', 'node')
       .call(
         d3
           .drag<any, SimulationNode>()
@@ -130,11 +178,35 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
           .on('end', dragended)
       );
 
-    // Add circles to nodes with hover effect
+    // Add white background for labels (rendered first)
+    const labelBackgrounds = node
+      .append('text')
+      .attr('class', 'label-background')
+      .text((d) => d.label)
+      .attr('x', (d) => (d.elementType === 'Core Story' ? 20 : 15))
+      .attr('y', 4)
+      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '12px' : '10px'))
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 4)
+      .attr('stroke-linejoin', 'round')
+      .style('pointer-events', 'none');
+
+    // Add actual label text
+    const labels = node
+      .append('text')
+      .attr('class', 'label')
+      .text((d) => d.label)
+      .attr('x', (d) => (d.elementType === 'Core Story' ? 20 : 15))
+      .attr('y', 4)
+      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '12px' : '10px'))
+      .attr('fill', '#000')
+      .style('pointer-events', 'none');
+
+    // Add circles to nodes (rendered on top of labels)
     const circles = node
       .append('circle')
-      .attr('r', (d: SimulationNode) => (d.elementType === 'Core Story' ? 15 : 10))
-      .attr('fill', (d: SimulationNode) => {
+      .attr('r', (d) => d.radius)
+      .attr('fill', (d) => {
         switch (d.elementType) {
           case 'Core Story':
             return '#ff0064';
@@ -154,46 +226,15 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
       })
       .attr('stroke', '#fff')
       .attr('stroke-width', 1.5)
-      .style('cursor', 'pointer')
-      .style('transition', 'all 0.3s ease');
-
-    // Add labels with background for better readability
-    const labels = node.append('g').style('transition', 'all 0.3s ease');
-
-    // Add white background for text
-    const labelBackgrounds = labels
-      .append('text')
-      .text((d: SimulationNode) => d.label)
-      .attr('x', (d: SimulationNode) => (d.elementType === 'Core Story' ? 20 : 15))
-      .attr('y', 4)
-      .attr('font-size', (d: SimulationNode) => (d.elementType === 'Core Story' ? '12px' : '10px'))
-      .attr('stroke', '#fff')
-      .attr('stroke-width', 4)
-      .attr('stroke-linejoin', 'round')
-      .style('pointer-events', 'none')
-      .style('transition', 'all 0.3s ease');
-
-    // Add actual text
-    const labelTexts = labels
-      .append('text')
-      .text((d: SimulationNode) => d.label)
-      .attr('x', (d: SimulationNode) => (d.elementType === 'Core Story' ? 20 : 15))
-      .attr('y', 4)
-      .attr('font-size', (d: SimulationNode) => (d.elementType === 'Core Story' ? '12px' : '10px'))
-      .attr('fill', '#000')
-      .style('pointer-events', 'none')
-      .style('transition', 'all 0.3s ease');
+      .style('cursor', 'pointer');
 
     // Helper function to get connected nodes
-    function getConnectedNodes(d: SimulationNode | SimulationLink) {
+    function getConnectedNodes(d: SimulationNode | SimulationLink): Set<string> {
       const connectedNodes = new Set<string>();
-
       if ('source' in d && 'target' in d) {
-        // If it's a link
         connectedNodes.add((d.source as SimulationNode).id);
         connectedNodes.add((d.target as SimulationNode).id);
       } else {
-        // If it's a node
         connectedNodes.add(d.id);
         links.forEach((l) => {
           const sourceId = (l.source as SimulationNode).id;
@@ -202,7 +243,6 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
           if (targetId === d.id) connectedNodes.add(sourceId);
         });
       }
-
       return connectedNodes;
     }
 
@@ -221,26 +261,24 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
           return connectedNodes.has(sourceId) && connectedNodes.has(targetId) ? 1 : 0.1;
         });
 
-        // Highlight the hovered node
+        // Highlight current node
         d3.select(this)
           .select('circle')
           .attr('stroke', '#000')
           .attr('stroke-width', 2)
-          .attr('r', d.elementType === 'Core Story' ? 18 : 12);
+          .attr('r', d.radius * 1.2);
       })
-      .on('mouseout', function () {
+      .on('mouseout', function (event: MouseEvent, d: SimulationNode) {
         // Reset all opacities
         node.style('opacity', 1);
-        link.style('opacity', 1);
+        link.style('opacity', 0.4);
 
-        // Reset node style
+        // Reset current node
         d3.select(this)
           .select('circle')
           .attr('stroke', '#fff')
           .attr('stroke-width', 1.5)
-          .attr('r', function (this: any, d: any) {
-            return (d as SimulationNode).elementType === 'Core Story' ? 15 : 10;
-          });
+          .attr('r', d.radius);
       });
 
     // Hover effects for links
@@ -252,46 +290,48 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
         node.style('opacity', (n: SimulationNode) => (connectedNodes.has(n.id) ? 1 : 0.1));
 
         // Fade unconnected links
-        link.style('opacity', (l: SimulationLink) => (l === d ? 1 : 0.1));
+        link.style('opacity', (l: SimulationLink) => (l === d ? 0.8 : 0.1));
 
-        // Highlight the hovered link
+        // Highlight current link
         d3.select(this)
           .attr('stroke-width', d.connectionType === '++' ? 3 : 2)
           .attr('stroke-opacity', 0.8);
       })
-      .on('mouseout', function () {
-        // Reset all opacities
+      .on('mouseout', function (event: MouseEvent, d: SimulationLink) {
+        // Reset all elements
         node.style('opacity', 1);
-        link.style('opacity', 1);
+        link.style('opacity', 0.4);
 
-        // Reset link style
+        // Reset current link
         d3.select(this)
-          .attr('stroke-width', function (this: any, d: any) {
-            return (d as SimulationLink).connectionType === '++' ? 2 : 1;
-          })
+          .attr('stroke-width', d.connectionType === '++' ? 2 : 1)
           .attr('stroke-opacity', 0.4);
       });
 
-    // Function to generate curved path between nodes
-    function linkArc(d: any) {
-      const dx = d.target.x! - d.source.x!;
-      const dy = d.target.y! - d.source.y!;
-      const dr = Math.sqrt(dx * dx + dy * dy);
-      const baseOffset = 0.1;
-      const distanceScale = Math.min(1, dr / 200);
-      const offset = dr * baseOffset * distanceScale;
-      const midX = (d.source.x! + d.target.x!) / 2;
-      const midY = (d.source.y! + d.target.y!) / 2;
-      const perpX = midX - (dy * offset) / dr;
-      const perpY = midY + (dx * offset) / dr;
-      return `M${d.source.x},${d.source.y} Q${perpX},${perpY} ${d.target.x},${d.target.y}`;
+    // Update function for synchronized rendering
+    function updatePositions() {
+      // Update node positions
+      node.attr('transform', (d) => `translate(${d.x},${d.y})`);
+
+      // Update link paths
+      link.attr('d', (d) => edgeRouter.getPath(d.source, d.target));
     }
 
-    // Update positions on each tick
-    simulation.on('tick', () => {
-      link.attr('d', linkArc);
-      node.attr('transform', (d) => `translate(${d.x},${d.y})`);
-    });
+    // Run simulation for initial positioning
+    simulation.nodes(nodes);
+    const linkForce = simulation.force('link') as d3.ForceLink<SimulationNode, SimulationLink>;
+    if (linkForce) {
+      linkForce.links(links);
+    }
+
+    // Warm up the simulation
+    for (let i = 0; i < 300; i++) simulation.tick();
+
+    // Update positions after warm-up
+    updatePositions();
+
+    // Now start the simulation
+    simulation.on('tick', updatePositions).restart();
 
     // Drag functions
     function dragstarted(event: d3.D3DragEvent<any, SimulationNode, any>, d: SimulationNode) {
@@ -303,6 +343,8 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
     function dragged(event: d3.D3DragEvent<any, SimulationNode, any>, d: SimulationNode) {
       d.fx = event.x;
       d.fy = event.y;
+      // Update positions during drag
+      updatePositions();
     }
 
     function dragended(event: d3.D3DragEvent<any, SimulationNode, any>, d: SimulationNode) {
@@ -321,13 +363,12 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, width, height }) => {
         .translate(-width / 2, -height / 2)
     );
 
-    // Cleanup
     return () => {
       simulation.stop();
     };
   }, [data, width, height]);
 
-  return <svg ref={svgRef} style={{ width: '100%', height: '100%' }} className="bg-white" />;
+  return <svg ref={svgRef} className="bg-white w-full h-full" />;
 };
 
-export default ForceGraph;
+export default SystemForceGraph;
