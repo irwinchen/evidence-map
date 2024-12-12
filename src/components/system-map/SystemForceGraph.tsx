@@ -108,7 +108,8 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
       .select(svgRef.current)
       .attr('width', width)
       .attr('height', height)
-      .attr('viewBox', [0, 0, width, height]);
+      .attr('viewBox', [0, 0, width, height])
+      .style('background', '#ffffff'); // Ensure white background
 
     // Define arrow markers with proper positioning
     svg
@@ -118,7 +119,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
       .join('marker')
       .attr('id', 'arrow')
       .attr('viewBox', '0 -5 10 10')
-      .attr('refX', (d) => 28) // Adjusted to account for node radius
+      .attr('refX', (d) => 28)
       .attr('refY', 0)
       .attr('markerWidth', 6)
       .attr('markerHeight', 6)
@@ -140,7 +141,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
     // Initialize edge router
     const edgeRouter = new EdgeRouter();
 
-    // Create the simulation but don't start it yet
+    // Create the simulation with adjusted forces for larger space
     const simulation = d3
       .forceSimulation<SimulationNode>(nodes)
       .force(
@@ -148,12 +149,12 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
         d3
           .forceLink<SimulationNode, SimulationLink>(links)
           .id((d) => d.id)
-          .distance(150)
+          .distance(250) // Increased from 200 for more spacing
       )
-      .force('charge', d3.forceManyBody().strength(-300).distanceMax(350))
+      .force('charge', d3.forceManyBody().strength(-800).distanceMax(800)) // Increased strength and distance
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(40))
-      .stop(); // Stop the simulation initially
+      .force('collision', d3.forceCollide().radius(80)) // Increased from 50
+      .stop();
 
     // Create container for links
     const linkGroup = g.append('g').attr('class', 'links');
@@ -194,7 +195,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
       .text((d) => d.label)
       .attr('x', (d) => (d.elementType === 'Core Story' ? 20 : 15))
       .attr('y', 4)
-      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '12px' : '10px'))
+      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '14px' : '12px'))
       .attr('stroke', '#fff')
       .attr('stroke-width', 4)
       .attr('stroke-linejoin', 'round')
@@ -207,14 +208,14 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
       .text((d) => d.label)
       .attr('x', (d) => (d.elementType === 'Core Story' ? 20 : 15))
       .attr('y', 4)
-      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '12px' : '10px'))
+      .attr('font-size', (d) => (d.elementType === 'Core Story' ? '14px' : '12px'))
       .attr('fill', '#000')
       .style('pointer-events', 'none');
 
     // Add circles to nodes (rendered on top of labels)
     const circles = node
       .append('circle')
-      .attr('r', (d) => d.radius)
+      .attr('r', (d) => d.radius * 1.2)
       .attr('fill', (d) => {
         switch (d.elementType) {
           case 'Core Story':
@@ -275,7 +276,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
           .select('circle')
           .attr('stroke', '#000')
           .attr('stroke-width', 2)
-          .attr('r', d.radius * 1.2);
+          .attr('r', d.radius * 1.4);
       })
       .on('mouseout', function (event: MouseEvent, d: SimulationNode) {
         // Reset all opacities
@@ -287,7 +288,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
           .select('circle')
           .attr('stroke', '#fff')
           .attr('stroke-width', 1.5)
-          .attr('r', d.radius);
+          .attr('r', d.radius * 1.2);
       });
 
     // Hover effects for links
@@ -363,7 +364,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
     }
 
     // Initial zoom to fit
-    const initialScale = 0.75;
+    const initialScale = 0.65; // Decreased from 0.85 to show more of the graph
     svg.call(
       zoom.transform,
       d3.zoomIdentity
@@ -377,7 +378,7 @@ const SystemForceGraph: React.FC<SystemForceGraphProps> = ({ data, width, height
     };
   }, [data, width, height]);
 
-  return <svg ref={svgRef} className="bg-white w-full h-full" />;
+  return <svg ref={svgRef} className="w-full h-full" />;
 };
 
 export default SystemForceGraph;

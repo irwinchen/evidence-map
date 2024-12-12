@@ -1,11 +1,28 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import AboutPage from './pages/AboutPage';
 import SystemMapPage from './pages/SystemMapPage';
 import ContributorsPage from './pages/ContributorsPage';
 import SubmitPage from './pages/SubmitPage';
 import ContactPage from './pages/ContactPage';
+
+const MainContent = () => {
+  const location = useLocation();
+  const isSystemMapPage = location.pathname === '/system-map';
+
+  return (
+    <main className={isSystemMapPage ? 'w-full' : 'container mx-auto px-4'}>
+      <Routes>
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/system-map" element={<SystemMapPage />} />
+        <Route path="/contributors" element={<ContributorsPage />} />
+        <Route path="/submit" element={<SubmitPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </main>
+  );
+};
 
 export default function App() {
   return (
@@ -63,15 +80,7 @@ export default function App() {
         </nav>
 
         {/* Main Content */}
-        <main className="container mx-auto px-4">
-          <Routes>
-            <Route path="/" element={<AboutPage />} />
-            <Route path="/system-map" element={<SystemMapPage />} />
-            <Route path="/contributors" element={<ContributorsPage />} />
-            <Route path="/submit" element={<SubmitPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </main>
+        <MainContent />
       </div>
     </BrowserRouter>
   );
